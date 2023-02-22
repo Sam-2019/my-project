@@ -3,7 +3,7 @@ import React from "react";
 export default function LogoCloud() {
  return (
   <div className="bg-white">
-   <div className="mx-auto max-w-7xl py-12 px-6 lg:py-16 lg:px-8">
+   <div className="mx-auto max-w-7xl py-6 sm:py-3 px-6 lg:pb-5 lg:px-8">
     <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
      <div>
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

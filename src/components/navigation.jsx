@@ -10,11 +10,11 @@ import { navigation } from "../utils";
 
 export default function Navigation() {
  return (
-  <div className="bg-white">
+  <div className="bg-white shadow-md">
    <Popover as="header" className="relative">
-    <div className="bg-warm-gray-50">
+    <div className="bg-warm-gray-50 ">
      <nav
-      className="relative mx-auto flex max-w-7xl items-center justify-between px-6 pt-6 xl:px-8"
+      className="relative flex max-w-auto items-center justify-between px-6 py-3 sm:py-4 xl:px-8 sm:shadow-none shadow-md"
       aria-label="Global"
      >
       <div className="flex flex-1 items-center">
@@ -34,17 +34,18 @@ export default function Navigation() {
          </Popover.Button>
         </div>
        </div>
-       <div className="hidden space-x-10 lg:ml-10 lg:flex">
-        {navigation.map((item) => (
-         <a
-          key={item.name}
-          href={item.href}
-          className="text-base font-medium text-warm-gray-500 hover:text-warm-gray-900"
-         >
-          {item.name}
-         </a>
-        ))}
-       </div>
+      </div>
+
+      <div className="justify-end hidden space-x-10 lg:flex">
+       {navigation.map((item) => (
+        <a
+         key={item.name}
+         href={item.href}
+         className="text-base font-medium text-warm-gray-500 hover:text-warm-gray-900"
+        >
+         {item.name}
+        </a>
+       ))}
       </div>
      </nav>
     </div>

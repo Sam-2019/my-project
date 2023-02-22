@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeItem() {
  return (
-  <div className="py-2 sm:py-5">
+  <div className="py-2 sm:py-10">
    <div className="inset-x-0 bottom-0 h-1/2" />
    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
