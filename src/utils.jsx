@@ -1,14 +1,13 @@
-import voca from "voca";
 
 export const navigation = [
- { name: "About", href: "/about" },
- { name: "Contact", href: "/contact" },
- { name: "Teams", href: "/team" },
- { name: "FAQ", href: "/faqs" },
+ { id: 1, name: "About", path: "/about" },
+ { id: 2, name: "Contact", path: "/contact" },
+ { id: 3, name: "Teams", path: "/team" },
+ { id: 4, name: "FAQ", path: "/faqs" },
 ];
 
 export const renderHeaderTitle = (data) => {
- return data.pathname.split("/").filter((i) => voca.titleCase(i));
+ return data.pathname.split("/").filter((i) => i);
 };
 
 export const social = [
@@ -136,6 +135,7 @@ export const faqs = [
 
 export const teams = [
  {
+  id: 1,
   name: "Lindsay Walton",
   role: "Front-end Developer",
   imageUrl:
@@ -144,6 +144,7 @@ export const teams = [
   linkedinUrl: "#",
  },
  {
+  id: 2,
   name: "Lindsay Walton",
   role: "Front-end Developer",
   imageUrl:
@@ -152,6 +153,7 @@ export const teams = [
   linkedinUrl: "#",
  },
  {
+  id: 3,
   name: "Lindsay Walton",
   role: "Front-end Developer",
   imageUrl:
@@ -160,6 +162,7 @@ export const teams = [
   linkedinUrl: "#",
  },
  {
+  id: 4,
   name: "Lindsay Walton",
   role: "Front-end Developer",
   imageUrl:
@@ -168,6 +171,7 @@ export const teams = [
   linkedinUrl: "#",
  },
  {
+  id: 5,
   name: "Lindsay Walton",
   role: "Front-end Developer",
   imageUrl:
@@ -176,6 +180,7 @@ export const teams = [
   linkedinUrl: "#",
  },
  {
+  id: 6,
   name: "Lindsay Walton",
   role: "Front-end Developer",
   imageUrl:

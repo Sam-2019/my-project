@@ -1,11 +1,6 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
- Bars3Icon,
- EnvelopeIcon,
- PhoneIcon,
- XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "../utils";
 
 export default function Navigation() {
@@ -39,9 +34,11 @@ export default function Navigation() {
       <div className="justify-end hidden space-x-10 lg:flex">
        {navigation.map((item) => (
         <a
-         key={item.name}
-         href={item.href}
-         className="text-base font-medium text-warm-gray-500 hover:text-warm-gray-900"
+         key={item.id}
+         href={item.path}
+         className={`text-base font-medium text-warm-gray-500 hover:text-warm-gray-900" ${
+          window.location.pathname === item.path ? "text-amber-900" : null
+         }`}
         >
          {item.name}
         </a>
@@ -84,8 +81,10 @@ export default function Navigation() {
          {navigation.map((item) => (
           <a
            key={item.name}
-           href={item.href}
-           className="block rounded-md px-3 py-2 text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50"
+           href={item.path}
+           className={`block rounded-md px-3 py-2 text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50 ${
+            window.location.pathname === item.path ? "text-amber-900" : null
+           }`}
           >
            {item.name}
           </a>

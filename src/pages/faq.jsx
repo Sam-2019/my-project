@@ -1,21 +1,19 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import PageHeader from "../components/page_header";
-import { faqs, renderHeaderTitle } from "../utils";
+import { faqs } from "../utils";
 
 export default function FAQ() {
- let location = useLocation();
  return (
   <div>
    <PageHeader
-    title={renderHeaderTitle(location)}
+    title="FAQs"
     content="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
      cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
    />
    <div className="bg-white py-0 sm:py-0">
-    <div className="mx-auto max-w-7xl px-6 lg:py-40 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 lg:py-10 py-9 lg:px-8">
      <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
       <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
        Frequently asked questions

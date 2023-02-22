@@ -1,25 +1,23 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { teams, renderHeaderTitle } from "../utils";
+import { teams } from "../utils";
 import PageHeader from "../components/page_header";
 
 export default function Teams() {
- let location = useLocation();
  return (
   <div>
    <PageHeader
-    title={renderHeaderTitle(location)}
+    title="TEAMS"
     content="We’re a dynamic group of individuals who are passionate about what we do
       and dedicated to delivering the best results for our clients"
    />
-   <div className="bg-white py-0 sm:py-0">
+   <div className="py-0 sm:py-0">
     <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-5 sm:pb-5">
      <ul
       role="list"
-      className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+      className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
      >
       {teams.map((team) => (
-       <li key={team.name}>
+       <li key={team.id}>
         <img
          className="aspect-[3/2] w-full rounded-2xl object-cover"
          src={team.imageUrl}

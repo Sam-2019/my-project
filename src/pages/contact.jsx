@@ -1,24 +1,17 @@
-import { useLocation } from "react-router-dom";
-import {
- Bars3Icon,
- EnvelopeIcon,
- PhoneIcon,
- XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import PageHeader from "../components/page_header";
-import { offices, renderHeaderTitle } from "../utils";
+import { offices } from "../utils";
 
 export default function Contact() {
- let location = useLocation();
  return (
   <main className="overflow-hidden">
    <PageHeader
-    title={renderHeaderTitle(location)}
+    title='CONTACTS'
     content="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
      cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
    />
    <div className="bg-warm-gray-50">
-    <div className="py-24 lg:py-32">
+    <div className="py-20 sm:py-20">
      <div className="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
        Get in touch

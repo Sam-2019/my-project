@@ -1,15 +1,13 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import Layout from "../components/layout";
 import PageHeader from "../components/page_header";
-import { stats, renderHeaderTitle } from "../utils";
+import { stats } from "../utils";
 
 export default function About() {
- let location = useLocation();
  return (
   <div>
    <PageHeader
-    title={renderHeaderTitle(location)}
+    title="ABOUT US"
     content="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
      cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
    />

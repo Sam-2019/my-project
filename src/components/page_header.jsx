@@ -3,7 +3,7 @@ import { default_image } from "../utils";
 
 export default function PageHeader({ title, content, image = default_image }) {
  return (
-  <div className="relative bg-white pt-5">
+  <div className="relative pt-1">
    <div className="relative isolate overflow-hidden bg-gray-900 py-24 px-6 sm:py-32 lg:px-8">
     <img
      src={image}
