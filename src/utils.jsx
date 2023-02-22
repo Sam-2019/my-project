@@ -1,4 +1,4 @@
-
+export const activeLink = "text-amber-900"
 export const navigation = [
  { id: 1, name: "About", path: "/about" },
  { id: 2, name: "Contact", path: "/contact" },

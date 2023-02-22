@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { navigation } from "../utils";
+import { navigation, activeLink } from "../utils";
 
 export default function Navigation() {
  return (
@@ -37,7 +37,7 @@ export default function Navigation() {
          key={item.id}
          href={item.path}
          className={`text-base font-medium text-warm-gray-500 hover:text-warm-gray-900" ${
-          window.location.pathname === item.path ? "text-amber-900" : null
+          window.location.pathname === item.path && activeLink
          }`}
         >
          {item.name}
@@ -83,7 +83,7 @@ export default function Navigation() {
            key={item.name}
            href={item.path}
            className={`block rounded-md px-3 py-2 text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50 ${
-            window.location.pathname === item.path ? "text-amber-900" : null
+            window.location.pathname === item.path && activeLink
            }`}
           >
            {item.name}
