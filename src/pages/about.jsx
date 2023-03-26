@@ -1,15 +1,15 @@
 import React from "react";
 import Layout from "../components/layout";
 import PageHeader from "../components/page_header";
-import { stats } from "../utils";
+import { stats, pageImages } from "../utils";
 
 export default function About() {
  return (
   <div>
    <PageHeader
     title="ABOUT US"
-    content="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-     cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+    content="We provide multi-disciplinary solutions to the industries we serve."
+    image={pageImages[1].source}
    />
    <Layout>
     <div className="relative sm:py-16 lg:py-0">
@@ -101,28 +101,36 @@ export default function About() {
      {/* Content area */}
      <div className="pt-12 sm:pt-16 lg:pt-20">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-       On a mission to empower teams
+       Company Overview
       </h2>
       <div className="mt-6 space-y-6 text-gray-500">
        <p className="text-lg">
-        Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
-        sed consectetur neque tristique pellentesque. Blandit amet, sed aenean
-        erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor
-        vitae ut. Amet vitae fames senectus vitae.
+        CHRISCOMIK COMPANY LTD. is a registered Limited Liability Company that
+        specializes in providing services such as Welding/Fabrication,
+        Mechanical Engineering, Supplies, Service Providers and General
+        Contractors, particularly in the Marine and Oil Fields. Our aim is to
+        provide our clients with a complete range of services related to
+        electrical and mechanical engineering, as well as the supply of
+        electrical and earth-moving equipment. We have built a solid reputation
+        in the oil and gas industry and have grown rapidly into a global service
+        company.
        </p>
        <p className="text-base leading-7">
-        Sollicitudin tristique eros erat odio sed vitae, consequat turpis
-        elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra
-        donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eros
-        erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-        pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam
-        urna.
+        Our qualified staff enables us to provide multi-disciplinary solutions
+        to the industries we serve. By choosing CHRISCOMIK COMPANY LTD as your
+        service provider, you can expect a full range of services through a
+        single point of contact, which reduces administrative costs and saves
+        valuable time. Our team is committed to focusing on your requirements
+        and providing you with total quality service and solutions.
        </p>
        <p className="text-base leading-7">
-        Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel
-        ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in
-        venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim
-        sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
+        At CHRISCOMIK COMPANY LTD, we understand that your needs require
+        constant attention, and we are committed to delivering high-quality and
+        reliable solutions to meet those needs. As a professional firm, we
+        adhere to relevant and widely accepted international codes and practices
+        such as Engineering ASME, AWS, APL, IEE INSB, etc. We strive to meet
+        customer specifications and requirements, which sets us apart from other
+        service providers.
        </p>
       </div>
      </div>
@@ -139,12 +147,7 @@ export default function About() {
         </div>
        ))}
       </dl>
-      <div className="mt-10">
-       <a href="#" className="text-base font-medium text-indigo-600">
-        Learn more about how we're changing the world
-        <span aria-hidden="true"> &rarr;</span>
-       </a>
-      </div>
+      <div className="mt-10"/>
      </div>
     </div>
    </Layout>

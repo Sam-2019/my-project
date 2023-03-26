@@ -8,7 +8,7 @@ export default function PageHeader({ title, content, image = default_image }) {
     <img
      src={image}
      alt=""
-     className="absolute inset-0 -z-10 h-full w-full object-cover"
+     className="absolute inset-0 -z-10 h-full w-full object-none mix-blend-overlay"
     />
     <svg
      viewBox="0 0 1097 845"

@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Teams from "./pages/teams";
+import Gallery from "./pages/gallery";
 import FAQ from "./pages/faq";
 import ErrorPage from "./pages/404";
 
@@ -22,9 +23,13 @@ const router = createBrowserRouter([
   path: "contact",
   element: <Contact />,
  },
+//  {
+//   path: "team",
+//   element: <Teams />,
+//  },
  {
-  path: "team",
-  element: <Teams />,
+  path: "gallery",
+  element: <Gallery />,
  },
  {
   path: "faqs",

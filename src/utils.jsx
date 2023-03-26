@@ -1,9 +1,137 @@
-export const activeLink = "text-amber-900"
+import bost from "./assets/images/logos/bost.jpg";
+import supermaritime from "./assets/images/logos/supermaritime.jpg";
+import temaport from "./assets/images/logos/temaport.jpeg";
+
+import tor from "./assets/images/logos/tor.png";
+import ubi from "./assets/images/logos/ubi.png";
+import vra from "./assets/images/logos/vra.webp";
+import two from "./assets/images/pics/2.jpg";
+import three from "./assets/images/pics/3.jpg";
+import four from "./assets/images/pics/4.jpg";
+import five from "./assets/images/pics/5.jpg";
+import six from "./assets/images/pics/6.jpg";
+import seven from "./assets/images/pics/7.jpg";
+import eight from "./assets/images/pics/8.jpg";
+import nine from "./assets/images/pics/9.jpg";
+import ten from "./assets/images/pics/10.jpg";
+import eleven from "./assets/images/pics/11.jpg";
+import twelve from "./assets/images/pics/12.jpg";
+import thirteen from "./assets/images/pics/13.jpg";
+import fourteen from "./assets/images/pics/14.jpg";
+import fifteen from "./assets/images/pics/15.jpg";
+import sixteen from "./assets/images/pics/16.jpg";
+import seventeen from "./assets/images/pics/17.jpg";
+import twentytwo from "./assets/images/pics/22.jpg";
+import twentyfour from "./assets/images/pics/24.jpg";
+import twentyfive from "./assets/images/pics/25.jpg";
+import twentysix from "./assets/images/pics/26.jpg";
+import twentyseven from "./assets/images/pics/27.jpg";
+import twentyeight from "./assets/images/pics/28.jpg";
+import twentynine from "./assets/images/pics/29.jpg";
+import thirty from "./assets/images/pics/30.jpg";
+import thirtyone from "./assets/images/pics/31.jpg";
+import thirtytwo from "./assets/images/pics/32.jpg";
+import thirtythree from "./assets/images/pics/33.jpg";
+import thirtyfour from "./assets/images/pics/34.jpg";
+import thirtyfive from "./assets/images/pics/35.jpg";
+import thirtysix from "./assets/images/pics/36.jpg";
+import thirtyseven from "./assets/images/pics/37.jpg";
+import thirtyeight from "./assets/images/pics/38.jpg";
+import thirtynine from "./assets/images/pics/39.jpg";
+import forty from "./assets/images/pics/40.jpg";
+import fortyone from "./assets/images/pics/41.jpg";
+import fortytwo from "./assets/images/pics/42.jpg";
+import fortythree from "./assets/images/pics/43.jpg";
+import fortyfour from "./assets/images/pics/44.jpg";
+
+import pipeline from "./assets/images/web/pipeline ocean.jpg";
+import deck from "./assets/images/web/man woman on deck.jpg";
+import heavy_machines from "./assets/images/web/smiling man heavy machines.jpg";
+import reflector_port from "./assets/images/web/two men reflector port.jpg";
+
+import about_us from './assets/images/web/about-us.jpeg'
+import about_us2 from './assets/images/web/about-us2.png'
+import contact1 from './assets/images/web/contact1.jpeg'
+import contact2 from './assets/images/web/contact2.jpeg'
+import contact3 from './assets/images/web/contact3.webp'
+import gallery from './assets/images/web/gallery.jpeg'
+
+export const companyImages1 = [
+ { id: 35, source: thirtyfive, alt: "thirtyfive" },
+ { id: 36, source: thirtysix, alt: "thirtysix" },
+ { id: 41, source: fortyone, alt: "fortyone" },
+ { id: 42, source: fortytwo, alt: "fortytwo" },
+ { id: 43, source: fortythree, alt: "fortythree" },
+ { id: 44, source: fortytwo, alt: "fortytwo" },
+ { id: 2, source: two, alt: "two" },
+ { id: 24, source: twentyfour, alt: "twentyfour" },
+ { id: 29, source: twentynine, alt: "twentynine" },
+ { id: 31, source: thirtyone, alt: "thirtyone" },
+];
+
+export const companyImages2 = [
+ { id: 3, source: three, alt: "three" },
+ { id: 4, source: four, alt: "four" },
+ { id: 5, source: five, alt: "five" },
+ { id: 6, source: six, alt: "six" },
+ { id: 7, source: seven, alt: "seven" },
+ { id: 8, source: eight, alt: "eight" },
+ { id: 9, source: nine, alt: "nine" },
+ { id: 10, source: ten, alt: "ten" },
+ { id: 11, source: eleven, alt: "eleven" },
+ { id: 12, source: twelve, alt: "twelve" },
+ { id: 14, source: fourteen, alt: "fourteen" },
+ { id: 13, source: thirteen, alt: "thirteen" },
+ { id: 15, source: fifteen, alt: "fifteen" },
+ { id: 17, source: seventeen, alt: "seventeen" },
+ { id: 22, source: twentytwo, alt: "twentytwo" },
+ { id: 26, source: twentysix, alt: "twentysix" },
+ { id: 27, source: twentyseven, alt: "twentyseven" },
+ { id: 28, source: twentyeight, alt: "twentyeight" },
+ { id: 30, source: thirty, alt: "thirty" },
+ { id: 32, source: thirtytwo, alt: "thirtytwo" },
+ { id: 37, source: thirtyseven, alt: "thirtyseven" },
+ { id: 40, source: forty, alt: "forty" },
+ { id: 39, source: thirtynine, alt: "thirtynine" },
+ { id: 33, source: thirtythree, alt: "thirtythree" },
+ //  { id: 34, source: thirtyfour, alt: "thirtyfour" },
+ //  { id: 38, source: thirtyeight, alt: "thirtyeight" },
+ // { id: 16, source: sixteen, alt: "sixteen" },
+ // { id: 25, source: twentyfive, alt: "twentyfive" },
+];
+
+export const logos = [
+ { id: 1, source: ubi, alt: "ubi" },
+ { id: 2, source: bost, alt: "bost" },
+ { id: 3, source: supermaritime, alt: "supermaritime" },
+ { id: 4, source: temaport, alt: "temaport" },
+ { id: 5, source: tor, alt: "tor" },
+ { id: 6, source: vra, alt: "vra" },
+];
+
+export const webImages = [
+ { id: 1, source: pipeline, alt: "pipeline" },
+ { id: 2, source: deck, alt: "deck" },
+ { id: 3, source: heavy_machines, alt: "heavy_machines" },
+ { id: 4, source: reflector_port, alt: "reflector_port" },
+];
+
+export const pageImages = [
+  { id: 1, source: about_us, alt: "about_us" },
+  { id: 2, source: about_us2, alt: "about_us2" },
+  { id: 3, source: contact1, alt: "contact1" },
+  { id: 4, source: contact2, alt: "contact2" },
+  { id: 5, source: contact3, alt: "contact3" },
+  { id: 6, source: gallery, alt: "gallery" },
+]
+
+export const activeLink = "text-amber-900";
 export const navigation = [
  { id: 1, name: "About", path: "/about" },
  { id: 2, name: "Contact", path: "/contact" },
- { id: 3, name: "Teams", path: "/team" },
- { id: 4, name: "FAQ", path: "/faqs" },
+//  { id: 3, name: "Teams", path: "/team" },
+ { id: 4, name: "Gallery", path: "/gallery" },
+ { id: 5, name: "FAQ", path: "/faqs" },
 ];
 
 export const renderHeaderTitle = (data) => {
@@ -77,19 +205,19 @@ export const social = [
 export const stats = [
  { label: "Founded", value: "2021" },
  { label: "Employees", value: "5" },
- { label: "Beta Users", value: "521" },
- { label: "Raised", value: "$25M" },
+ { label: "Clients", value: "10+" },
+ { label: "Projects", value: "50+" },
 ];
 
 export const offices = [
  {
   id: 1,
-  city: "Los Angeles",
+  city: "Community 1",
   address: ["4556 Brendan Ferry", "Los Angeles, CA 90210"],
  },
  {
   id: 2,
-  city: "New York",
+  city: "Community 9",
   address: ["886 Walter Streets", "New York, NY 12345"],
  },
 ];
@@ -189,6 +317,71 @@ export const teams = [
   linkedinUrl: "#",
  },
 ];
+
+const people = [
+ {
+  name: "Lindsay Walton",
+  imageUrl:
+   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80",
+ },
+ // More people...
+];
+
+export const activityItems = [
+ {
+  id: 1,
+  person: people[0],
+  project: "Workcation",
+  commit: "2d89f0c8",
+  environment: "production",
+  time: "1h",
+ },
+];
+
+export const contactPhone = [
+ {
+  id: 1,
+  value: "+233 554-158101",
+  link: "tel:+233554158101",
+  css: ''
+ },
+ {
+  id: 2,
+  value: "+233 249-688556",
+  link: "tel:+233249688556",
+  css: 'py-1'
+ },
+ {
+  id: 3,
+  value: "+233 242-934334",
+  link: "tel:+233242934334",
+  css: 'py-1'
+ },
+];
+
+export const contactEmail = [
+ {
+  id: 1,
+  value: "chriscomiceng@gmail.com",
+  link: "mailto:chriscomiceng@gmail.com",
+  css: ''
+ },
+ {
+  id: 2,
+  value: "michaelchriscomik@gmail.com",
+  link: "mailto:michaelchriscomik@gmail.com",
+  css: 'py-1'
+ },
+];
+
+export const contactLinkedIn = [
+ {
+  id: 1,
+  value: "linkedIn",
+  href: "linkedIn",
+ },
+];
+
 
 export const default_image =
  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply";
