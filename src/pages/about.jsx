@@ -100,9 +100,9 @@ export default function About() {
     <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
      {/* Content area */}
      <div className="pt-12 sm:pt-16 lg:pt-20">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
        Company Overview
-      </h2>
+      </h2> */}
       <div className="mt-6 space-y-6 text-gray-500">
        <p className="text-lg">
         CHRISCOMIK COMPANY LTD. is a registered Limited Liability Company that
@@ -128,7 +128,7 @@ export default function About() {
         constant attention, and we are committed to delivering high-quality and
         reliable solutions to meet those needs. As a professional firm, we
         adhere to relevant and widely accepted international codes and practices
-        such as Engineering ASME, AWS, APL, IEE INSB, etc. We strive to meet
+        such as Engineering ASME, AWS, APL, IEE INSB, ASB CLASS  etc. We strive to meet
         customer specifications and requirements, which sets us apart from other
         service providers.
        </p>

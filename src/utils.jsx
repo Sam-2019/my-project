@@ -49,12 +49,12 @@ import deck from "./assets/images/web/man woman on deck.jpg";
 import heavy_machines from "./assets/images/web/smiling man heavy machines.jpg";
 import reflector_port from "./assets/images/web/two men reflector port.jpg";
 
-import about_us from './assets/images/web/about-us.jpeg'
-import about_us2 from './assets/images/web/about-us2.png'
-import contact1 from './assets/images/web/contact1.jpeg'
-import contact2 from './assets/images/web/contact2.jpeg'
-import contact3 from './assets/images/web/contact3.webp'
-import gallery from './assets/images/web/gallery.jpeg'
+import about_us from "./assets/images/web/about-us.jpeg";
+import about_us2 from "./assets/images/web/about-us2.png";
+import contact1 from "./assets/images/web/contact1.jpeg";
+import contact2 from "./assets/images/web/contact2.jpeg";
+import contact3 from "./assets/images/web/contact3.webp";
+import gallery from "./assets/images/web/gallery.jpeg";
 
 export const companyImages1 = [
  { id: 35, source: thirtyfive, alt: "thirtyfive" },
@@ -117,19 +117,19 @@ export const webImages = [
 ];
 
 export const pageImages = [
-  { id: 1, source: about_us, alt: "about_us" },
-  { id: 2, source: about_us2, alt: "about_us2" },
-  { id: 3, source: contact1, alt: "contact1" },
-  { id: 4, source: contact2, alt: "contact2" },
-  { id: 5, source: contact3, alt: "contact3" },
-  { id: 6, source: gallery, alt: "gallery" },
-]
+ { id: 1, source: about_us, alt: "about_us" },
+ { id: 2, source: about_us2, alt: "about_us2" },
+ { id: 3, source: contact1, alt: "contact1" },
+ { id: 4, source: contact2, alt: "contact2" },
+ { id: 5, source: contact3, alt: "contact3" },
+ { id: 6, source: gallery, alt: "gallery" },
+];
 
 export const activeLink = "text-amber-900";
 export const navigation = [
  { id: 1, name: "About", path: "/about" },
  { id: 2, name: "Contact", path: "/contact" },
-//  { id: 3, name: "Teams", path: "/team" },
+ //  { id: 3, name: "Teams", path: "/team" },
  { id: 4, name: "Gallery", path: "/gallery" },
  { id: 5, name: "FAQ", path: "/faqs" },
 ];
@@ -203,8 +203,8 @@ export const social = [
 ];
 
 export const stats = [
- { label: "Founded", value: "2021" },
- { label: "Employees", value: "5" },
+ { label: "Founded", value: "2015" },
+ { label: "Employees", value: "10" },
  { label: "Clients", value: "10+" },
  { label: "Projects", value: "50+" },
 ];
@@ -213,52 +213,61 @@ export const offices = [
  {
   id: 1,
   city: "Community 1",
-  address: ["4556 Brendan Ferry", "Los Angeles, CA 90210"],
+  address: ["GPHA Shipyard", "Tema, Ghana"],
  },
  {
   id: 2,
   city: "Community 9",
-  address: ["886 Walter Streets", "New York, NY 12345"],
+  address: ["Off The General Hospital Road Bypass V1", "Tema, Ghana"],
  },
 ];
 
 export const faqs = [
  {
-  question: "What's the best thing about Switzerland?",
+  question: "What is Chriscomikeng?",
   answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+   "Chriscomikeng is an engineering company which provides a complete range of services related to mechanical, marine & electrical engineering services. We are committed to delivering high-quality and reliable solutions through a single point of contact, which reduces administrative costs and saves valuable time.",
  },
  {
-  question: "What's the best thing about Switzerland?",
-  answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  question: "What does Chriscomikeng stand for",
+  answer: "W-I-P",
  },
  {
-  question: "What's the best thing about Switzerland?",
+  question: "What is Chriscomikeng’s mission/purpose statement?",
   answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+   "Our aim is to work with our clients to enhance the supply chain strength through cooperation, communication, innovation and teamwork.",
  },
  {
-  question: "What's the best thing about Switzerland?",
+  question: "What is Chriscomikeng's vision as a company?",
   answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+   "Our vision is to become the most respectful and trustworthy firm in the delivery of professional services including sales and technical support services by adapting appropriate state of art technology.",
  },
  {
-  question: "What's the best thing about Switzerland?",
+  question: "What industries does Chriscomikeng operate in",
   answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+   "Chriscomikeng leads in delivering solutions across Shipping, Marine, Oil & Gas.",
  },
  {
-  question: "What's the best thing about Switzerland?",
+  question: "Is Chriscomikeng a Ghana Company?",
   answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+   "Chriscomikeng is a wholly owned Ghanaian company with a footprint across Africa, incorporated in Accra, Ghana and headquartered in Tema.",
  },
  {
-  question: "What's the best thing about Switzerland?",
+  question: "How many countries does Chriscomikeng operate in",
   answer:
-   "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+   "Due to our best in class service delivery, our services have been engaged across Africa in countries like Nigeria etc.",
  },
- // More questions...
+ {
+  question: "What does Chriscomikeng do",
+  answer:
+   "CHRISCOMIK COMPANY LTD specializes in providing Mechanical & Marine Engineering, Welding/Fabrication, Steel Rust Control And Protection, Procurement, Shipping Agency services and supplying Electricals/Instruments, Renting Of Heavy Duty Equipment And Earth Moving Machines.",
+ },
+
+ {
+  question: "How do I contact Chriscomikeng",
+  answer:
+   "You can find contact details for Chriscomikeng on our Contacts page.",
+ },
 ];
 
 export const teams = [
@@ -343,19 +352,19 @@ export const contactPhone = [
   id: 1,
   value: "+233 554-158101",
   link: "tel:+233554158101",
-  css: ''
+  css: "",
  },
  {
   id: 2,
   value: "+233 249-688556",
   link: "tel:+233249688556",
-  css: 'py-1'
+  css: "py-1",
  },
  {
   id: 3,
   value: "+233 242-934334",
   link: "tel:+233242934334",
-  css: 'py-1'
+  css: "py-1",
  },
 ];
 
@@ -364,13 +373,13 @@ export const contactEmail = [
   id: 1,
   value: "chriscomiceng@gmail.com",
   link: "mailto:chriscomiceng@gmail.com",
-  css: ''
+  css: "",
  },
  {
   id: 2,
   value: "michaelchriscomik@gmail.com",
   link: "mailto:michaelchriscomik@gmail.com",
-  css: 'py-1'
+  css: "py-1",
  },
 ];
 
@@ -381,7 +390,6 @@ export const contactLinkedIn = [
   href: "linkedIn",
  },
 ];
-
 
 export const default_image =
  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply";
