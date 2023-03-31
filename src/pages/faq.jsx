@@ -9,8 +9,7 @@ export default function FAQ() {
   <div>
    <PageHeader
     title="FAQs"
-    content="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-     cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+    content="Welcome to our FAQ page, where we've compiled answers to some of the most common questions our clients ask."
    />
    <div className="bg-white py-0 sm:py-0">
     <div className="mx-auto max-w-7xl px-6 lg:py-10 py-9 lg:px-8">

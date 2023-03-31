@@ -203,17 +203,17 @@ export const social = [
 ];
 
 export const stats = [
- { label: "Founded", value: "2015" },
+ { label: "Founded", value: "2014" },
  { label: "Employees", value: "10" },
  { label: "Clients", value: "10+" },
  { label: "Projects", value: "50+" },
 ];
-
+// 28 August
 export const offices = [
  {
   id: 1,
   city: "Community 1",
-  address: ["GPHA Shipyard", "Tema, Ghana"],
+  address: ["Near Padmore School", "Tema, Ghana"],
  },
  {
   id: 2,
@@ -228,12 +228,12 @@ export const faqs = [
   answer:
    "Chriscomikeng is an engineering company which provides a complete range of services related to mechanical, marine & electrical engineering services. We are committed to delivering high-quality and reliable solutions through a single point of contact, which reduces administrative costs and saves valuable time.",
  },
+//  {
+//   question: "What does Chriscomikeng stand for",
+//   answer: "W-I-P",
+//  },
  {
-  question: "What does Chriscomikeng stand for",
-  answer: "W-I-P",
- },
- {
-  question: "What is Chriscomikeng’s mission/purpose statement?",
+  question: "What is Chriscomikeng’s mission / purpose statement?",
   answer:
    "Our aim is to work with our clients to enhance the supply chain strength through cooperation, communication, innovation and teamwork.",
  },
@@ -243,12 +243,12 @@ export const faqs = [
    "Our vision is to become the most respectful and trustworthy firm in the delivery of professional services including sales and technical support services by adapting appropriate state of art technology.",
  },
  {
-  question: "What industries does Chriscomikeng operate in",
+  question: "What industries does Chriscomikeng operate in?",
   answer:
    "Chriscomikeng leads in delivering solutions across Shipping, Marine, Oil & Gas.",
  },
  {
-  question: "Is Chriscomikeng a Ghana Company?",
+  question: "Is Chriscomikeng a Ghanain Company?",
   answer:
    "Chriscomikeng is a wholly owned Ghanaian company with a footprint across Africa, incorporated in Accra, Ghana and headquartered in Tema.",
  },
@@ -258,7 +258,7 @@ export const faqs = [
    "Due to our best in class service delivery, our services have been engaged across Africa in countries like Nigeria etc.",
  },
  {
-  question: "What does Chriscomikeng do",
+  question: "What does Chriscomikeng do?",
   answer:
    "CHRISCOMIK COMPANY LTD specializes in providing Mechanical & Marine Engineering, Welding/Fabrication, Steel Rust Control And Protection, Procurement, Shipping Agency services and supplying Electricals/Instruments, Renting Of Heavy Duty Equipment And Earth Moving Machines.",
  },

@@ -128,7 +128,7 @@ export default function About() {
         constant attention, and we are committed to delivering high-quality and
         reliable solutions to meet those needs. As a professional firm, we
         adhere to relevant and widely accepted international codes and practices
-        such as Engineering ASME, AWS, APL, IEE INSB, ASB CLASS  etc. We strive to meet
+        such as Engineering ASME, AWS, APL, IEE INSB, ABS & BV CLASS Welders. We strive to meet
         customer specifications and requirements, which sets us apart from other
         service providers.
        </p>
