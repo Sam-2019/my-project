@@ -6,9 +6,9 @@ export default function Contact() {
  return (
   <main className="overflow-hidden">
    <PageHeader
-    title="CONTACTS"
+    title="CONTACT"
     content="We look forward to hearing from you and helping you meet your needs"
-    image={pageImages[3].source}
+    image={pageImages[4].source}
    />
    <div className="bg-warm-gray-50">
     <div className="py-20 sm:py-20">

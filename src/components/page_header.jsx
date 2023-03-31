@@ -7,7 +7,7 @@ export default function PageHeader({ title, content, image = default_image }) {
    <div className="relative isolate overflow-hidden bg-gray-900 py-24 px-6 sm:py-32 lg:px-8">
     <img
      src={image}
-     alt=""
+     alt="header image"
      className="absolute inset-0 -z-10 h-full w-full object-none mix-blend-overlay"
     />
     <svg
