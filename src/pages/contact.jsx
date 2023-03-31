@@ -208,7 +208,7 @@ export default function Contact() {
            </div>
           </div>
 
-          <div className="flex space-x-3 mt-5">
+          {/* <div className="flex space-x-3 mt-5">
            <span className="text-teal-200">
             <span className="sr-only">LinkedIn</span>
             <svg
@@ -229,7 +229,7 @@ export default function Contact() {
              <a href="#">linkedIn</a>
             </div>
            </div>
-          </div>
+          </div> */}
          </li>
         </ul>
        </div>
