@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import PageHeader from "../components/page_header";
-import { stats, pageImages } from "../utils";
+import { aboutStats, pageImages } from "../utils";
 
 export default function About() {
  return (
@@ -138,7 +138,7 @@ export default function About() {
      {/* Stats section */}
      <div className="mt-10">
       <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-       {stats.map((stat) => (
+       {aboutStats.map((stat) => (
         <div key={stat.label} className="border-t-2 border-gray-100 pt-6">
          <dt className="text-base font-medium text-gray-500">{stat.label}</dt>
          <dd className="text-3xl font-bold tracking-tight text-gray-900">

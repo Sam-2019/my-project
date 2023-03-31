@@ -56,7 +56,6 @@ import contact2 from "./assets/images/web/contact2.jpeg";
 import contact3 from "./assets/images/web/contact3.webp";
 import gallery from "./assets/images/web/gallery.jpeg";
 
-
 export const companyImages1 = [
  { id: 35, source: thirtyfive, alt: "thirtyfive" },
  { id: 36, source: thirtysix, alt: "thirtysix" },
@@ -203,11 +202,32 @@ export const social = [
  },
 ];
 
-export const stats = [
+export const aboutStats = [
  { label: "Founded", value: "2014" },
  { label: "Employees", value: "10" },
  { label: "Clients", value: "10+" },
  { label: "Projects", value: "50+" },
+];
+
+export const companyStats = [
+ {
+  id: 1,
+  label: "Customer Satisfaction",
+  value: "100%",
+  css: "flex flex-col"
+ },
+ {
+  id: 2,
+  label: "Service Delivery",
+  value: "24/7",
+  css: "mt-10 flex flex-col sm:mt-0"
+ },
+ {
+  id: 3,
+  label: "Clients",
+  value: "50+",
+  css: "mt-10 flex flex-col sm:mt-0"
+ },
 ];
 // 28 August
 export const offices = [
@@ -229,10 +249,10 @@ export const faqs = [
   answer:
    "Chriscomikeng is an engineering company which provides a complete range of services related to mechanical, marine & electrical engineering services. We are committed to delivering high-quality and reliable solutions through a single point of contact, which reduces administrative costs and saves valuable time.",
  },
-//  {
-//   question: "What does Chriscomikeng stand for",
-//   answer: "W-I-P",
-//  },
+ //  {
+ //   question: "What does Chriscomikeng stand for",
+ //   answer: "W-I-P",
+ //  },
  {
   question: "What is Chriscomikeng’s mission / purpose statement?",
   answer:
