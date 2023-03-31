@@ -18,7 +18,7 @@ export default function Navigation() {
          <span className="sr-only">Your Company</span>
          <img
           className="w-40"
-          src="./src/assets/images/logos/chriscomikeng-edit.png"
+          src="./src/assets/images/logos/chriscomikeng.png"
           alt="company logo"
          />
         </a>
@@ -65,7 +65,7 @@ export default function Navigation() {
         <div>
          <img
           className="w-40"
-          src="./src/assets/images/logos/chriscomikeng-edit.png"
+          src="./src/assets/images/logos/chriscomikeng.png"
           alt="company logo"
          />
         </div>
