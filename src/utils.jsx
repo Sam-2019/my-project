@@ -203,10 +203,10 @@ export const social = [
 ];
 
 export const aboutStats = [
- { label: "Founded", value: "2014" },
- { label: "Employees", value: "10" },
- { label: "Clients", value: "10+" },
- { label: "Projects", value: "50+" },
+ { id: 1, label: "Founded", value: "2014" },
+ { id: 2, label: "Employees", value: "10" },
+ { id: 3, label: "Clients", value: "10+" },
+ { id: 4, label: "Projects", value: "50+" },
 ];
 
 export const companyStats = [
@@ -214,19 +214,19 @@ export const companyStats = [
   id: 1,
   label: "Customer Satisfaction",
   value: "100%",
-  css: "flex flex-col"
+  css: "flex flex-col",
  },
  {
   id: 2,
   label: "Service Delivery",
   value: "24/7",
-  css: "mt-10 flex flex-col sm:mt-0"
+  css: "mt-10 flex flex-col sm:mt-0",
  },
  {
   id: 3,
   label: "Clients",
   value: "50+",
-  css: "mt-10 flex flex-col sm:mt-0"
+  css: "mt-10 flex flex-col sm:mt-0",
  },
 ];
 // 28 August
