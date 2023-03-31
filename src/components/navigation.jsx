@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation, activeLink } from "../utils";
-import companyLogo from './assets/images/logos/chriscomikeng.png'
+import companyLogo from "../assets/images/logos/chriscomikeng.png";
 
 export default function Navigation() {
  return (
@@ -17,11 +17,7 @@ export default function Navigation() {
        <div className="flex w-full items-center justify-between lg:w-auto">
         <a href="/">
          <span className="sr-only">Your Company</span>
-         <img
-          className="w-40"
-          src={companyLogo}
-          alt="company logo"
-         />
+         <img className="w-40" src={companyLogo} alt="company logo" />
         </a>
         <div className="-mr-2 flex items-center lg:hidden">
          <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-warm-gray-50 p-2 text-warm-gray-400 hover:bg-warm-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500">
@@ -64,11 +60,7 @@ export default function Navigation() {
       <div className="overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
        <div className="flex items-center justify-between px-5 pt-4">
         <div>
-         <img
-          className="w-40"
-          src={companyLogo}
-          alt="company logo"
-         />
+         <img className="w-40" src={companyLogo} alt="company logo" />
         </div>
         <div className="-mr-2">
          <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-warm-gray-400 hover:bg-warm-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
