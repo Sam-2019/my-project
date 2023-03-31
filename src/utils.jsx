@@ -56,6 +56,7 @@ import contact2 from "./assets/images/web/contact2.jpeg";
 import contact3 from "./assets/images/web/contact3.webp";
 import gallery from "./assets/images/web/gallery.jpeg";
 
+
 export const companyImages1 = [
  { id: 35, source: thirtyfive, alt: "thirtyfive" },
  { id: 36, source: thirtysix, alt: "thirtysix" },

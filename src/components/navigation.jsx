@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation, activeLink } from "../utils";
+import companyLogo from './assets/images/logos/chriscomikeng.png'
 
 export default function Navigation() {
  return (
@@ -18,7 +19,7 @@ export default function Navigation() {
          <span className="sr-only">Your Company</span>
          <img
           className="w-40"
-          src="./src/assets/images/logos/chriscomikeng.png"
+          src={companyLogo}
           alt="company logo"
          />
         </a>
@@ -65,7 +66,7 @@ export default function Navigation() {
         <div>
          <img
           className="w-40"
-          src="./src/assets/images/logos/chriscomikeng.png"
+          src={companyLogo}
           alt="company logo"
          />
         </div>
