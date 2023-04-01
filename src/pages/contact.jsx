@@ -3,6 +3,9 @@ import PageHeader from "../components/page_header";
 import { offices, contactPhone, contactEmail, pageImages } from "../utils";
 
 export default function Contact() {
+ const handleSubmit = () => {
+  console.log("hello");
+ };
  return (
   <main className="overflow-hidden">
    <PageHeader
@@ -240,8 +243,7 @@ export default function Contact() {
          Send us a message
         </h3>
         <form
-         action="#"
-         method="POST"
+         onSubmit={() => handleSubmit()}
          className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
         >
          <div>
