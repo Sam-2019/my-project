@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { webImages } from "../utils";
 
 export default function HomeItem() {
@@ -26,12 +27,12 @@ export default function HomeItem() {
       </p>
       <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
        <div className="space-y-4 sm:mx-auto sm:gap-5 sm:space-y-0">
-        <a
-         href="/contact"
+        <Link
+         to="/contact"
          className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
         >
          Contact Us
-        </a>
+        </Link>
        </div>
       </div>
      </div>

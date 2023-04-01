@@ -1,5 +1,6 @@
 import React from "react";
 import { navigation, social } from "../utils";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
  return (
@@ -11,25 +12,25 @@ export default function Footer() {
     >
      {navigation.map((item) => (
       <div key={item.name} className="pb-6">
-       <a
-        href={item.path}
+       <Link
+        to={item.path}
         className="text-sm leading-6 text-gray-600 hover:text-gray-900"
        >
         {item.name}
-       </a>
+       </Link>
       </div>
      ))}
     </nav>
     {/* <div className="mt-10 flex justify-center space-x-10">
      {social.map((item) => (
-      <a
+      <Link
        key={item.name}
-       href={item.href}
+       to={item.href}
        className="text-gray-400 hover:text-gray-500"
       >
        <span className="sr-only">{item.name}</span>
        <item.icon className="h-6 w-6" aria-hidden="true" />
-      </a>
+      </Link>
      ))}
     </div> */}
     <p className="mt-10 text-center text-xs leading-5 text-gray-500">

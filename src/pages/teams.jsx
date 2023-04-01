@@ -1,6 +1,7 @@
 import React from "react";
 import { teams } from "../utils";
 import PageHeader from "../components/page_header";
+import { Link } from "react-router-dom";
 
 export default function Teams() {
  return (
@@ -29,8 +30,8 @@ export default function Teams() {
         <p className="text-base leading-7 text-gray-600">{team.role}</p>
         <ul role="list" className="mt-6 flex gap-x-6">
          <li>
-          <a
-           href={team.linkedinUrl}
+          <Link
+           to={team.linkedinUrl}
            className="text-gray-400 hover:text-gray-500"
           >
            <span className="sr-only">LinkedIn</span>
@@ -46,7 +47,7 @@ export default function Teams() {
              clipRule="evenodd"
             />
            </svg>
-          </a>
+          </Link>
          </li>
         </ul>
        </li>

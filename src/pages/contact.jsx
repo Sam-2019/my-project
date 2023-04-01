@@ -1,11 +1,10 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/page_header";
 import { offices, contactPhone, contactEmail, pageImages } from "../utils";
 
 export default function Contact() {
- const handleSubmit = () => {
-  console.log("hello");
- };
+ const handleSubmit = () => {};
  return (
   <main className="overflow-hidden">
    <PageHeader
@@ -189,7 +188,7 @@ export default function Contact() {
             <div className="text-white">
              {contactPhone.map((contact) => (
               <div key={contact.id} className={contact.css}>
-               <a href={contact.link}>{contact.value}</a>
+               <Link to={contact.link}>{contact.value}</Link>
               </div>
              ))}
             </div>
@@ -204,7 +203,7 @@ export default function Contact() {
             <div className="text-white">
              {contactEmail.map((contact) => (
               <div key={contact.id} className={contact.css}>
-               <a href={contact.link}>{contact.value}</a>
+               <Link to={contact.link}>{contact.value}</Link>
               </div>
              ))}
             </div>
@@ -229,7 +228,7 @@ export default function Contact() {
            </span>
            <div className="flex-1 space-y-1">
             <div className="text-white">
-             <a href="#">linkedIn</a>
+             <Link to="#">linkedIn</Link>
             </div>
            </div>
           </div> */}

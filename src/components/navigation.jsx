@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation, activeLink } from "../utils";
@@ -15,10 +16,10 @@ export default function Navigation() {
      >
       <div className="flex flex-1 items-center">
        <div className="flex w-full items-center justify-between lg:w-auto">
-        <a href="/">
+        <Link to="/">
          <span className="sr-only">Your Company</span>
          <CompanyLogo />
-        </a>
+        </Link>
         <div className="-mr-2 flex items-center lg:hidden">
          <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-warm-gray-50 p-2 text-warm-gray-400 hover:bg-warm-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500">
           <span className="sr-only">Open main menu</span>
@@ -30,15 +31,15 @@ export default function Navigation() {
 
       <div className="justify-end hidden space-x-10 lg:flex">
        {navigation.map((item) => (
-        <a
+        <Link
          key={item.id}
-         href={item.path}
+         to={item.path}
          className={`text-base font-medium text-warm-gray-500 hover:text-warm-gray-900" ${
           window.location.pathname === item.path && activeLink
          }`}
         >
          {item.name}
-        </a>
+        </Link>
        ))}
       </div>
      </nav>
@@ -72,15 +73,15 @@ export default function Navigation() {
        <div className="pt-5 pb-6">
         <div className="space-y-1 px-2">
          {navigation.map((item) => (
-          <a
+          <Link
            key={item.name}
-           href={item.path}
+           to={item.path}
            className={`block rounded-md px-3 py-2 text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50 ${
             window.location.pathname === item.path && activeLink
            }`}
           >
            {item.name}
-          </a>
+          </Link>
          ))}
         </div>
        </div>
