@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { webImages } from "../utils";
 
 export default function HomeItem() {
-    const activeImage = webImages[2]
+ const activeImage = webImages[2];
  return (
-  <div className="py-2 sm:py-10">
+  <div className="py-0 sm:py-10">
    <div className="inset-x-0 bottom-0 h-1/2" />
    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
@@ -23,7 +23,8 @@ export default function HomeItem() {
        <span className="block text-indigo-200">engineering solutions</span>
       </h1>
       <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
-      We have built a solid reputation in the oil and gas industry and have grown rapidly into a global service company
+       We have built a solid reputation in the oil and gas industry and have
+       grown rapidly into a global service company
       </p>
       <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
        <div className="space-y-4 sm:mx-auto sm:gap-5 sm:space-y-0">
