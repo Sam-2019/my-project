@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation, activeLink } from "../utils";
@@ -11,7 +11,7 @@ export default function Navigation() {
    <Popover as="header" className="relative">
     <div className="bg-warm-gray-50 ">
      <nav
-      className="relative flex max-w-auto items-center justify-between px-6 py-3 sm:py-4 xl:px-8 sm:shadow-none shadow-md"
+      className="relative flex max-w-auto items-center justify-between px-6 py-0 sm:py-0 xl:px-8 sm:shadow-none shadow-md"
       aria-label="Global"
      >
       <div className="flex flex-1 items-center">
@@ -31,15 +31,16 @@ export default function Navigation() {
 
       <div className="justify-end hidden space-x-10 lg:flex">
        {navigation.map((item) => (
-        <Link
+        <NavLink
          key={item.id}
          to={item.path}
-         className={`text-base font-medium text-warm-gray-500 hover:text-warm-gray-900" ${
-          window.location.pathname === item.path && activeLink
-         }`}
+         className={({ isActive }) =>
+          `text-base font-medium text-warm-gray-500 hover:text-warm-gray-900
+          ${isActive ? "text-sky-400" : null}`
+         }
         >
          {item.name}
-        </Link>
+        </NavLink>
        ))}
       </div>
      </nav>
@@ -73,15 +74,17 @@ export default function Navigation() {
        <div className="pt-5 pb-6">
         <div className="space-y-1 px-2">
          {navigation.map((item) => (
-          <Link
-           key={item.name}
+          <NavLink
+           key={item.id}
            to={item.path}
-           className={`block rounded-md px-3 py-2 text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50 ${
-            window.location.pathname === item.path && activeLink
-           }`}
+           className={({ isActive }) =>
+            `block rounded-md px-3 py-2 text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50 ${
+             isActive ? "text-sky-400" : null
+            }`
+           }
           >
            {item.name}
-          </Link>
+          </NavLink>
          ))}
         </div>
        </div>
