@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import PageHeader from "../components/page_header";
 import { offices, contactPhone, contactEmail, pageImages } from "../utils";
-import SuccessModal from "../components/modalII";
+import Notify from "../components/notify";
 
 export default function Contact() {
  const [modal, setModal] = React.useState(false);
@@ -12,10 +12,13 @@ export default function Contact() {
   register,
   handleSubmit,
   formState: { errors },
+  reset
  } = useForm();
 
  const onSubmit = (data) => {
   setModal(true);
+  reset()
+
  };
 
  return (
@@ -323,11 +326,7 @@ export default function Contact() {
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
              {...register("email", { required: true })}
             />
-            {errors.email && (
-             <span className="text-sm text-warm-gray-500">
-              This field is required
-             </span>
-            )}
+            {errors.email && <RequiredError />}
            </div>
           </div>
 
@@ -448,7 +447,7 @@ export default function Contact() {
     </section>
    </main>
 
-   {modal && <SuccessModal modal={modal} setModal={setModal} />}
+   {modal && <Notify modal={modal} setModal={setModal} />}
   </Fragment>
  );
 }
