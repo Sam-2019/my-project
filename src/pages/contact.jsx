@@ -16,22 +16,22 @@ export default function Contact() {
   reset,
  } = useForm();
 
+ const hook = import.meta.env.VITE_SLACK_KEY;
+
  const onSubmit = async (data) => {
   try {
    const response = await axios.post(
-    import.meta.env.VITE_SLACK_KEY,
-    JSON.stringify(data),
+    hook,
     {
+     text: JSON.stringify(data),
+    },
+    {
+     withCredentials: false,
      headers: {
-      "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "*",
-      "Access-Control-Allow-Headers": "*",
-      "Access-Control-Allow-Credentials": true,
      },
     }
    );
-
    console.log({ response });
   } catch (_error) {
    console.log(_error);
@@ -300,10 +300,8 @@ export default function Contact() {
              name="first-name"
              id="first-name"
              autoComplete="given-name"
-             className="block w-full rounded-md
-   border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm
-   focus:border-teal-500 focus:ring-teal-500"
-             defaultValue=""
+             className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+             defaultValue="Kemi"
              {...register("firstName", { required: true })}
             />
             {errors.firstName && <RequiredError />}
@@ -324,6 +322,7 @@ export default function Contact() {
              id="last-name"
              autoComplete="family-name"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+             defaultValue="Ogun"
              {...register("lastName", { required: true })}
             />
             {errors.lastName && <RequiredError />}
@@ -344,6 +343,7 @@ export default function Contact() {
              type="email"
              autoComplete="email"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+             defaultValue="Kemi@gmail.com"
              {...register("email", { required: true })}
             />
             {errors.email && <RequiredError />}
@@ -385,6 +385,7 @@ export default function Contact() {
              name="subject"
              id="subject"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+             defaultValue="Hi"
              {...register("subject", { required: true })}
             />
             {errors.subject && <RequiredError />}
@@ -410,7 +411,7 @@ export default function Contact() {
              rows={4}
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
              aria-describedby="message-max"
-             defaultValue={""}
+             defaultValue="Hello"
              {...register("message", { required: true })}
             />
             {errors.message && <RequiredError />}
