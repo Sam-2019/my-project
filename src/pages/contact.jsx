@@ -12,8 +12,9 @@ export default function Contact() {
  const [message, setMessage] = React.useState({
   header: "",
   body: "",
-  type: null,
+  type: "",
  });
+
  const {
   register,
   handleSubmit,
@@ -22,7 +23,6 @@ export default function Contact() {
  } = useForm();
 
  const hook = import.meta.env.VITE_SLACK_KEY;
-
  const onSubmit = async (data) => {
   var payload = {
     text: `Name: ${data.firstName} ${data.lastName} \nEmail: ${data.email} \nPhone: ${data.phone ? data.phone : "N/A"} \nSubject: ${data.subject} \nMessage: ${data.message}`,
