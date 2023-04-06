@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import PageHeader from "../components/page_header";
 import { offices, contactPhone, contactEmail, pageImages } from "../utils";
 import Notify from "../components/notify";
+import axios from "axios";
 
 export default function Contact() {
  const [modal, setModal] = React.useState(false);
@@ -12,13 +13,49 @@ export default function Contact() {
   register,
   handleSubmit,
   formState: { errors },
-  reset
+  reset,
  } = useForm();
 
- const onSubmit = (data) => {
-  setModal(true);
-  reset()
+ const onSubmit = async (data) => {
+  try {
+   const response = await axios.post(
+    import.meta.env.VITE_SLACK_KEY,
+    JSON.stringify(data),
+    {
+     headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin":
+       "https://wordle-react-project.netlify.app/",
+      "Access-Control-Allow-Methods": [
+       "POST",
+       "GET",
+       "OPTIONS",
+       "DELETE",
+       "PUT",
+      ],
+      "Access-Control-Allow-Headers": [
+       "append",
+       "delete",
+       "entries",
+       "foreach",
+       "get",
+       "has",
+       "keys",
+       "set",
+       "values",
+       "Authorization",
+      ],
+     },
+    }
+   );
 
+   console.log({ response });
+  } catch (_error) {
+   console.log(_error);
+  } finally {
+   reset();
+   setModal(true);
+  }
  };
 
  return (
