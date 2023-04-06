@@ -1,14 +1,19 @@
 import React, { Fragment } from "react";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import PageHeader from "../components/page_header";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { offices, contactPhone, contactEmail, pageImages } from "../utils";
 import Notify from "../components/notify";
-import axios from "axios";
 
 export default function Contact() {
  const [modal, setModal] = React.useState(false);
+ const [message, setMessage] = React.useState({
+  header: "",
+  body: "",
+  type: null,
+ });
  const {
   register,
   handleSubmit,
@@ -19,26 +24,41 @@ export default function Contact() {
  const hook = import.meta.env.VITE_SLACK_KEY;
 
  const onSubmit = async (data) => {
-  try {
-   const response = await axios.post(
-    hook,
-    {
-     text: JSON.stringify(data),
-    },
-    {
-     withCredentials: false,
-     headers: {
-      "Access-Control-Allow-Origin": "*",
-     },
-    }
-   );
-   console.log({ response });
-  } catch (_error) {
-   console.log(_error);
-  } finally {
-   reset();
-   setModal(true);
-  }
+  var payload = {
+    text: `Name: ${data.firstName} ${data.lastName} \nEmail: ${data.email} \nPhone: ${data.phone ? data.phone : "N/A"} \nSubject: ${data.subject} \nMessage: ${data.message}`,
+   };
+
+  const options = {
+   method: "POST",
+   url: hook,
+   headers: {
+    "content-type": "application/x-www-form-urlencoded",
+   },
+   data: JSON.stringify(payload),
+  };
+
+  axios
+   .request(options)
+   .then(function (response) {
+    setMessage({
+     header: "Message delivered",
+     body:
+      "Thank you for reaching out to us! Our team will review your message and get back to you shortly.",
+     type: "success",
+    });
+
+    reset();
+    setModal(true);
+   })
+   .catch(function (error) {
+    setMessage({
+     header: "Message delivery failed",
+     body: "Please try again shortly",
+     type: "error",
+    });
+    reset();
+    setModal(true);
+   });
  };
 
  return (
@@ -301,7 +321,6 @@ export default function Contact() {
              id="first-name"
              autoComplete="given-name"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-             defaultValue="Kemi"
              {...register("firstName", { required: true })}
             />
             {errors.firstName && <RequiredError />}
@@ -322,7 +341,6 @@ export default function Contact() {
              id="last-name"
              autoComplete="family-name"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-             defaultValue="Ogun"
              {...register("lastName", { required: true })}
             />
             {errors.lastName && <RequiredError />}
@@ -343,7 +361,6 @@ export default function Contact() {
              type="email"
              autoComplete="email"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-             defaultValue="Kemi@gmail.com"
              {...register("email", { required: true })}
             />
             {errors.email && <RequiredError />}
@@ -385,7 +402,6 @@ export default function Contact() {
              name="subject"
              id="subject"
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-             defaultValue="Hi"
              {...register("subject", { required: true })}
             />
             {errors.subject && <RequiredError />}
@@ -411,7 +427,6 @@ export default function Contact() {
              rows={4}
              className="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
              aria-describedby="message-max"
-             defaultValue="Hello"
              {...register("message", { required: true })}
             />
             {errors.message && <RequiredError />}
@@ -468,7 +483,7 @@ export default function Contact() {
     </section>
    </main>
 
-   {modal && <Notify modal={modal} setModal={setModal} />}
+   {modal && <Notify modal={modal} setModal={setModal} message={message} />}
   </Fragment>
  );
 }

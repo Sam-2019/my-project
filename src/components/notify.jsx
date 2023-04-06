@@ -1,11 +1,25 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { CheckIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+ CheckIcon,
+ XMarkIcon,
+ ExclamationTriangleIcon,
+} from "@heroicons/react/24/outline";
 
-export default function Notify({ modal, setModal }) {
+export default function Notify({ modal, setModal, message }) {
  const closeModal = () => {
   setModal(false);
  };
+
+ const icon =
+  message.type === "success" ? (
+   <CheckIcon className="h-6 w-6 text-green-600" aria-hidden="true" />
+  ) : (
+   <ExclamationTriangleIcon
+    className="h-6 w-6 text-red-600"
+    aria-hidden="true"
+   />
+  );
 
  return (
   <Transition.Root show={modal} as={Fragment}>
@@ -46,20 +60,17 @@ export default function Notify({ modal, setModal }) {
         </div>
         <div>
          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-          <CheckIcon className="h-6 w-6 text-green-600" aria-hidden="true" />
+          {icon}
          </div>
          <div className="mt-3 text-center sm:mt-5">
           <Dialog.Title
            as="h3"
            className="text-base font-semibold leading-6 text-gray-900"
           >
-           Message delivered
+           {message.header}
           </Dialog.Title>
           <div className="mt-2">
-           <p className="text-sm text-gray-500">
-            Thank you for reaching out to us! Our team will review your message
-            and get back to you shortly.
-           </p>
+           <p className="text-sm text-gray-500">{message.body}</p>
           </div>
          </div>
         </div>
