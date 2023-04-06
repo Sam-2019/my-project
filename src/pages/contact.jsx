@@ -24,27 +24,10 @@ export default function Contact() {
     {
      headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin":
-       "https://wordle-react-project.netlify.app/",
-      "Access-Control-Allow-Methods": [
-       "POST",
-       "GET",
-       "OPTIONS",
-       "DELETE",
-       "PUT",
-      ],
-      "Access-Control-Allow-Headers": [
-       "append",
-       "delete",
-       "entries",
-       "foreach",
-       "get",
-       "has",
-       "keys",
-       "set",
-       "values",
-       "Authorization",
-      ],
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Credentials": true,
      },
     }
    );
