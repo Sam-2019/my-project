@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import PageHeader from "../components/page_header";
 import ImageViewer from "../components/modal";
-import { companyImages1, companyImages2, pageImages } from "../utils";
+import {
+ companyImages1,
+ companyImages2,
+ companyImages3,
+ pageImages,
+ videos,
+} from "../utils";
 
 export default function Gallery() {
  let [item, setItem] = useState({});
@@ -46,6 +52,26 @@ export default function Gallery() {
       role="list"
       className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 mt-5"
      >
+      {companyImages3.map((file) => (
+       <li key={file.id} className="relative">
+        <div
+         onClick={() => sendInfo(file)}
+         className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+        >
+         <img
+          src={file.source}
+          alt={file.alt}
+          className="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+         />
+        </div>
+       </li>
+      ))}
+     </ul>
+
+     <ul
+      role="list"
+      className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 mt-5"
+     >
       {companyImages2.map((file) => (
        <li key={file.id} className="relative">
         <div
@@ -67,6 +93,21 @@ export default function Gallery() {
         <p className="pointer-events-none block text-sm font-medium text-gray-500">
          {file.size}
         </p>
+       </li>
+      ))}
+     </ul>
+
+     <ul
+      role="list"
+      className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 mt-5"
+     >
+      {videos.map((file) => (
+       <li key={file.id} className="relative">
+        <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+         <video width="320" height="240" controls>
+          <source src={file.source} type="video/mp4" />
+         </video>
+        </div>
        </li>
       ))}
      </ul>

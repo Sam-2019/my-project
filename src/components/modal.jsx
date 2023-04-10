@@ -54,15 +54,13 @@ export default function MyModal({ show, setIsOpen, data, setData }) {
              <div class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
               {/* <div class="font-bold">{data.alt}</div> */}
 
-              <div class="opacity-100 text-sm ">{data.description}</div>
+              <div class="opacity-100 text-lg">{data.description}</div>
              </div>
             </div>
            </div>
-           <img
-            src={data.source}
-            alt={data.alt}
-            class=" w-50 rounded-2xl"
-           />
+           <div class="h-min rounded-2xl">
+            <img src={data.source} alt={data.alt} />
+           </div>
           </div>
          </div>
         </Dialog.Panel>

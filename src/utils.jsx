@@ -1,10 +1,21 @@
 import bost from "./assets/images/logos/bost.jpg";
 import supermaritime from "./assets/images/logos/supermaritime.jpg";
 import temaport from "./assets/images/logos/temaport.jpeg";
-
 import tor from "./assets/images/logos/tor.png";
 import ubi from "./assets/images/logos/ubi.png";
 import vra from "./assets/images/logos/vra.webp";
+
+import about_us from "./assets/images/web/about-us.jpeg";
+import about_us2 from "./assets/images/web/about-us2.png";
+import contact1 from "./assets/images/web/contact1.jpeg";
+import contact2 from "./assets/images/web/contact2.jpeg";
+import contact3 from "./assets/images/web/contact3.webp";
+import gallery from "./assets/images/web/gallery.jpeg";
+import pipeline from "./assets/images/web/pipeline ocean.jpg";
+import deck from "./assets/images/web/man woman on deck.jpg";
+import heavy_machines from "./assets/images/web/smiling man heavy machines.jpg";
+import reflector_port from "./assets/images/web/two men reflector port.jpg";
+
 import two from "./assets/images/pics/2.jpg";
 import three from "./assets/images/pics/3.jpg";
 import four from "./assets/images/pics/4.jpg";
@@ -44,60 +55,265 @@ import fortytwo from "./assets/images/pics/42.jpg";
 import fortythree from "./assets/images/pics/43.jpg";
 import fortyfour from "./assets/images/pics/44.jpg";
 
-import pipeline from "./assets/images/web/pipeline ocean.jpg";
-import deck from "./assets/images/web/man woman on deck.jpg";
-import heavy_machines from "./assets/images/web/smiling man heavy machines.jpg";
-import reflector_port from "./assets/images/web/two men reflector port.jpg";
+import image2 from "./assets/images/pics/IMG-20230402-WA0002.jpg";
+import image3 from "./assets/images/pics/IMG-20230402-WA0003.jpg";
+import image4 from "./assets/images/pics/IMG-20230402-WA0004.jpg";
+import image4i from "./assets/images/pics/IMG-20230404-WA0004.jpg";
+import image5 from "./assets/images/pics/IMG-20230404-WA0005.jpg";
+import image6 from "./assets/images/pics/IMG-20230404-WA0006.jpg";
+import image7 from "./assets/images/pics/IMG-20230404-WA0007.jpg";
+import image8 from "./assets/images/pics/IMG-20230404-WA0008.jpg";
+import image9 from "./assets/images/pics/IMG-20230404-WA0009.jpg";
+import image10 from "./assets/images/pics/IMG-20230404-WA0010.jpg";
+import image11 from "./assets/images/pics/IMG-20230404-WA0011.jpg";
+import image12 from "./assets/images/pics/IMG-20230404-WA0012.jpg";
+import image13 from "./assets/images/pics/IMG-20230404-WA0013.jpg";
+import image14 from "./assets/images/pics/IMG-20230404-WA0014.jpg";
+import image15 from "./assets/images/pics/IMG-20230404-WA0015.jpg";
+import image16 from "./assets/images/pics/IMG-20230404-WA0016.jpg";
+import image17 from "./assets/images/pics/IMG-20230404-WA0017.jpg";
+import image18 from "./assets/images/pics/IMG-20230404-WA0018.jpg";
+import image19 from "./assets/images/pics/IMG-20230404-WA0019.jpg";
+import image20 from "./assets/images/pics/IMG-20230404-WA0020.jpg";
+import image21 from "./assets/images/pics/IMG-20230404-WA0021.jpg";
+import image22 from "./assets/images/pics/IMG-20230404-WA0022.jpg";
 
-import about_us from "./assets/images/web/about-us.jpeg";
-import about_us2 from "./assets/images/web/about-us2.png";
-import contact1 from "./assets/images/web/contact1.jpeg";
-import contact2 from "./assets/images/web/contact2.jpeg";
-import contact3 from "./assets/images/web/contact3.webp";
-import gallery from "./assets/images/web/gallery.jpeg";
+import video11 from "./assets/videos/VID-20230222-WA0011.mp4";
+import video12 from "./assets/videos/VID-20230222-WA0012.mp4";
+import video13 from "./assets/videos/VID-20230222-WA0013.mp4";
+import video23 from "./assets/videos/VID-20230404-WA0023.mp4";
+import video24 from "./assets/videos/VID-20230404-WA0024.mp4";
+import video25 from "./assets/videos/VID-20230404-WA0025.mp4";
 
 export const companyImages1 = [
- { id: 35, source: thirtyfive, alt: "thirtyfive", description:"Chriscomik engineers fabricating a stage on SW-10" }, 
- { id: 36, source: thirtysix, alt: "thirtysix", description: "Chriscomik engineers fixing a crane on SW-10" },
- { id: 41, source: fortyone, alt: "fortyone", description: "Our engineers fabricating and welding of pipeline on SW-10" }, 
- { id: 42, source: fortytwo, alt: "fortytwo" , description: "Chriscomik engineers fixing a diving LARS on NVKOMODO" },
- { id: 43, source: fortythree, alt: "fortythree", description: "Our engineers fixing a diving LARS on NVKOMODO" },
-//  { id: 44, source: fortytwo, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO"  },
- { id: 2, source: two, alt: "two", description: "A diving equipment for SW-10" }, 
- { id: 24, source: twentyfour, alt: "twentyfour", description: "Our engineers changing a hall plate" },
- { id: 29, source: twentynine, alt: "twentynine" , description: "Our engineers welding on SW-10" },
- { id: 31, source: thirtyone, alt: "thirtyone" , description: "Our engineers welding on SW-10" },
+ {
+  id: 35,
+  source: thirtyfive,
+  alt: "thirtyfive",
+  description: "Chriscomik engineers fabricating a stage on SW-10",
+ },
+ {
+  id: 36,
+  source: thirtysix,
+  alt: "thirtysix",
+  description: "Chriscomik engineers fixing a crane on SW-10",
+ },
+ {
+  id: 41,
+  source: fortyone,
+  alt: "fortyone",
+  description: "Our engineers fabricating and welding of pipeline on SW-10",
+ },
+ {
+  id: 42,
+  source: fortytwo,
+  alt: "fortytwo",
+  description: "Chriscomik engineers fixing a diving LARS on NVKOMODO",
+ },
+ {
+  id: 43,
+  source: fortythree,
+  alt: "fortythree",
+  description: "Our engineers fixing a diving LARS on NVKOMODO",
+ },
+ //  { id: 44, source: fortytwo, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO"  },
+ {
+  id: 2,
+  source: two,
+  alt: "two",
+  description: "A diving equipment for SW-10",
+ },
+ {
+  id: 24,
+  source: twentyfour,
+  alt: "twentyfour",
+  description: "Our engineers changing a hall plate",
+ },
+ {
+  id: 29,
+  source: twentynine,
+  alt: "twentynine",
+  description: "Our engineers welding on SW-10",
+ },
+ {
+  id: 31,
+  source: thirtyone,
+  alt: "thirtyone",
+  description: "Our engineers welding on SW-10",
+ },
 ];
 
 export const companyImages2 = [
- { id: 3, source: three, alt: "three", description: "Chriscomik engineers fabricating a blower foundation at workshop for SW-10"},
- { id: 4, source: four, alt: "four", description: "Chriscomik engineers fabricating and welding at PSC Tema shipyard" }, 
- { id: 5, source: five, alt: "five", description: "Our engineers fabricating and welding at Tema Port" },
- { id: 6, source: six, alt: "six" , description: "Our engineers fabricating and welding at PSC Tema shipyard"},  
- { id: 7, source: seven, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard" }, 
- { id: 8, source: eight, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop" }, 
- { id: 9, source: nine, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port" },  
- { id: 10, source: ten, alt: "ten", description: "Fabricating and welding" }, 
- { id: 11, source: eleven, alt: "eleven", description: "A roller machine machine at Chriscomik workshop" }, 
- { id: 12, source: twelve, alt: "twelve" , description: "Heavy duty cutting machine at Chriscomik workshop"},  
- { id: 14, source: fourteen, alt: "fourteen", description: "A fabricated blower machine at workshop" }, 
- { id: 13, source: thirteen, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop" }, 
- { id: 15, source: fifteen, alt: "fifteen" , description: "Welding and fabricating blower foundation at workshop"},  
- { id: 17, source: seventeen, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena" }, 
- { id: 22, source: twentytwo, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port" }, 
- { id: 26, source: twentysix, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard" }, 
- { id: 27, source: twentyseven, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard" }, 
- { id: 28, source: twentyeight, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO" },
- { id: 30, source: thirty, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard" },  
- { id: 32, source: thirtytwo, alt: "thirtytwo", description: "Some pressure pipes" },
- { id: 37, source: thirtyseven, alt: "thirtyseven",  description: "Our engineers fabricating a staircase SW-10"},
- { id: 40, source: forty, alt: "forty", description: "Welding and fabrication at Tema Port" },  
- { id: 39, source: thirtynine, alt: "thirtynine", description: "Steel plate insertion" }, 
- { id: 33, source: thirtythree, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop" },
+ {
+  id: 3,
+  source: three,
+  alt: "three",
+  description:
+   "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",
+ },
+ {
+  id: 4,
+  source: four,
+  alt: "four",
+  description:
+   "Chriscomik engineers fabricating and welding at PSC Tema shipyard",
+ },
+ {
+  id: 5,
+  source: five,
+  alt: "five",
+  description: "Our engineers fabricating and welding at Tema Port",
+ },
+ {
+  id: 6,
+  source: six,
+  alt: "six",
+  description: "Our engineers fabricating and welding at PSC Tema shipyard",
+ },
+ {
+  id: 7,
+  source: seven,
+  alt: "seven",
+  description: "Working on propeller shaft at PSC Tema shipyard",
+ },
+ {
+  id: 8,
+  source: eight,
+  alt: "eight",
+  description: "Heavy duty cutting machine at Chriscomik workshop",
+ },
+ {
+  id: 9,
+  source: nine,
+  alt: "nine",
+  description: "Fabricating and inserting a new plate at Tema Port",
+ },
+ { id: 10, source: ten, alt: "ten", description: "Fabricating and welding" },
+ {
+  id: 11,
+  source: eleven,
+  alt: "eleven",
+  description: "A roller machine machine at Chriscomik workshop",
+ },
+ {
+  id: 12,
+  source: twelve,
+  alt: "twelve",
+  description: "Heavy duty cutting machine at Chriscomik workshop",
+ },
+ {
+  id: 14,
+  source: fourteen,
+  alt: "fourteen",
+  description: "A fabricated blower machine at workshop",
+ },
+ {
+  id: 13,
+  source: thirteen,
+  alt: "thirteen",
+  description: "Welding and fabricating blower foundation at workshop",
+ },
+ {
+  id: 15,
+  source: fifteen,
+  alt: "fifteen",
+  description: "Welding and fabricating blower foundation at workshop",
+ },
+ {
+  id: 17,
+  source: seventeen,
+  alt: "seventeen",
+  description: "Chriscomik CEO and captain of MV Elena",
+ },
+ {
+  id: 22,
+  source: twentytwo,
+  alt: "twentytwo",
+  description: "MV Elena after welding and fabrication at Tema Port",
+ },
+ {
+  id: 26,
+  source: twentysix,
+  alt: "twentysix",
+  description: "Working on the propeller shaft at PSC Tema Shipyard",
+ },
+ {
+  id: 27,
+  source: twentyseven,
+  alt: "twentyseven",
+  description: "Sand blasting and painting at PSC Tema Shipyard",
+ },
+ {
+  id: 28,
+  source: twentyeight,
+  alt: "twentyeight",
+  description: "Welding and fabrication on NVKOMODO",
+ },
+ {
+  id: 30,
+  source: thirty,
+  alt: "thirty",
+  description: "Sand blasting at PSC Tema Shipyard",
+ },
+ {
+  id: 32,
+  source: thirtytwo,
+  alt: "thirtytwo",
+  description: "Some pressure pipes",
+ },
+ {
+  id: 37,
+  source: thirtyseven,
+  alt: "thirtyseven",
+  description: "Our engineers fabricating a staircase SW-10",
+ },
+ {
+  id: 40,
+  source: forty,
+  alt: "forty",
+  description: "Welding and fabrication at Tema Port",
+ },
+ {
+  id: 39,
+  source: thirtynine,
+  alt: "thirtynine",
+  description: "Steel plate insertion",
+ },
+ {
+  id: 33,
+  source: thirtythree,
+  alt: "thirtythree",
+  description: "Chriscomik engineers welding and fabrication at the workshop",
+ },
  //  { id: 34, source: thirtyfour, alt: "thirtyfour" },
  //  { id: 38, source: thirtyeight, alt: "thirtyeight" },
  // { id: 16, source: sixteen, alt: "sixteen" },
  // { id: 25, source: twentyfive, alt: "twentyfive" },
+];
+
+export const companyImages3 = [
+ { id: 2, source: image2, alt: "image2", description: "" },
+//  { id: 3, source: image3, alt: "image3", description: "" },
+//  { id: 4, source: image4, alt: "image4", description: "" },
+ //  { id: 4, source: image4, alt: "image4", description: "" },
+ { id: 5, source: image5, alt: "image5", description: "" },
+ { id: 6, source: image6, alt: "image6", description: "" },
+ { id: 7, source: image7, alt: "image7", description: "" },
+ { id: 8, source: image8, alt: "image8", description: "" },
+ { id: 9, source: image9, alt: "image9", description: "" },
+ { id: 10, source: image10, alt: "image10", description: "" },
+ { id: 11, source: image11, alt: "image11", description: "" },
+ { id: 12, source: image12, alt: "image12", description: "" },
+ { id: 13, source: image13, alt: "image13", description: "" },
+ { id: 14, source: image14, alt: "image14", description: "" },
+ { id: 15, source: image15, alt: "image15", description: "" },
+ { id: 16, source: image16, alt: "image16", description: "" },
+ { id: 17, source: image17, alt: "image17", description: "" },
+ { id: 18, source: image18, alt: "image18", description: "" },
+ { id: 19, source: image19, alt: "image19", description: "" },
+ { id: 20, source: image20, alt: "image20", description: "" },
+ { id: 21, source: image21, alt: "image21", description: "" },
+ { id: 22, source: image22, alt: "image22", description: "" },
 ];
 
 export const logos = [
@@ -123,6 +339,15 @@ export const pageImages = [
  { id: 4, source: contact2, alt: "contact2" },
  { id: 5, source: contact3, alt: "contact3" },
  { id: 6, source: gallery, alt: "gallery" },
+];
+
+export const videos = [
+ { id: 1, source: video11, alt: "video11", description: "" },
+ { id: 2, source: video12, alt: "video12", description: "" },
+ { id: 3, source: video13, alt: "video13", description: "" },
+ { id: 4, source: video23, alt: "video23", description: "" },
+ { id: 5, source: video24, alt: "video24", description: "" },
+ { id: 6, source: video25, alt: "video25", description: "" },
 ];
 
 export const activeLink = "text-sky-400";
@@ -231,6 +456,7 @@ export const companyStats = [
 ];
 // 28 August
 // src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+
 export const offices = [
  {
   id: 1,
