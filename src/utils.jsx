@@ -79,11 +79,11 @@ import image21 from "./assets/images/pics/IMG-20230404-WA0021.jpg";
 import image22 from "./assets/images/pics/IMG-20230404-WA0022.jpg";
 
 import video11 from "./assets/videos/VID-20230222-WA0011.mp4";
-import video12 from "./assets/videos/VID-20230222-WA0012.mp4";
-import video13 from "./assets/videos/VID-20230222-WA0013.mp4";
-import video23 from "./assets/videos/VID-20230404-WA0023.mp4";
-import video24 from "./assets/videos/VID-20230404-WA0024.mp4";
-import video25 from "./assets/videos/VID-20230404-WA0025.mp4";
+// import video12 from "./assets/videos/VID-20230222-WA0012.mp4";
+// import video13 from "./assets/videos/VID-20230222-WA0013.mp4";
+// import video23 from "./assets/videos/VID-20230404-WA0023.mp4";
+// import video24 from "./assets/videos/VID-20230404-WA0024.mp4";
+// import video25 from "./assets/videos/VID-20230404-WA0025.mp4";
 
 export const companyImages1 = [
  {
@@ -343,11 +343,11 @@ export const pageImages = [
 
 export const videos = [
  { id: 1, source: video11, alt: "video11", description: "" },
- { id: 2, source: video12, alt: "video12", description: "" },
- { id: 3, source: video13, alt: "video13", description: "" },
- { id: 4, source: video23, alt: "video23", description: "" },
- { id: 5, source: video24, alt: "video24", description: "" },
- { id: 6, source: video25, alt: "video25", description: "" },
+//  { id: 2, source: video12, alt: "video12", description: "" },
+//  { id: 3, source: video13, alt: "video13", description: "" },
+//  { id: 4, source: video23, alt: "video23", description: "" },
+//  { id: 5, source: video24, alt: "video24", description: "" },
+//  { id: 6, source: video25, alt: "video25", description: "" },
 ];
 
 export const activeLink = "text-sky-400";
