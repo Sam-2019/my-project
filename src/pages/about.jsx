@@ -18,7 +18,7 @@ export default function About() {
        Company Overview
       </h2> */}
      <div className="mt-6 space-y-6 text-gray-500">
-      <p className="text-lg">
+      <p className="text-lg leading-7">
        CHRISCOMIK COMPANY LTD. is a registered Limited Liability Company that
        specializes in providing services such as Welding/Fabrication, Mechanical
        Engineering, Supplies, Service Providers and General Contractors,
@@ -44,6 +44,28 @@ export default function About() {
        Engineering ASME, AWS, APL, IEE INSB, ABS & BV CLASS Welders. We strive
        to meet customer specifications and requirements, which sets us apart
        from other service providers.
+      </p>
+
+      <p>
+       <span className="block text-3xl font-bold tracking-tight text-gray-900 mb-3">
+        Subsidiaries
+       </span>
+
+       <span className="block text-base leading-7">
+        Our family of subsidiaries includes{" "}
+        <span className="text-3xl font-bold tracking-tight text-gray-900 text-base leading-7">
+         Sasmarin Company Limited
+        </span>
+        , which specializes in aluminum and argon welding, as well as the supply
+        of plates and stainless materials, and electrical engineering services.
+        We also have{" "}
+        <span className="text-3xl font-bold tracking-tight text-gray-900 text-base leading-7">
+         Davmas Company Limited
+        </span>
+        , which provides tank cleaning, sandblasting, and diving support
+        systems. Together, these companies offer a comprehensive range of
+        solutions to meet your engineering needs.
+       </span>
       </p>
      </div>
     </div>
