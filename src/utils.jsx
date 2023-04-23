@@ -310,12 +310,12 @@ export const companyImages3 = [
 ];
 
 export const logos = [
- { id: 1, source: ubi, alt: "ubi" },
- { id: 2, source: bost, alt: "bost" },
- { id: 3, source: supermaritime, alt: "supermaritime" },
- { id: 4, source: temaport, alt: "temaport" },
- { id: 5, source: tor, alt: "tor" },
- { id: 6, source: vra, alt: "vra" },
+ { id: 1, source: "https://chriscomikeng.com/images/logos/ubi.png", alt: "ubi" },
+ { id: 2, source: "https://chriscomikeng.com/images/logos/bost.jpg", alt: "bost" },
+ { id: 3, source: 'https://chriscomikeng.com/images/logos/supermaritime.jpg', alt: "supermaritime" },
+ { id: 4, source: "https://chriscomikeng.com/images/logos/temaport.jpeg", alt: "temaport" },
+ { id: 5, source: "https://chriscomikeng.com/images/logos/tor.png", alt: "tor" },
+ { id: 6, source: "https://chriscomikeng.com/images/logos/vra.webp", alt: "vra" },
 ];
 
 export const webImages = [
