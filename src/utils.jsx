@@ -293,8 +293,8 @@ export const companyImages2 = [
 
 export const companyImages3 = [
  { id: 2, source: image2, alt: "image2", description: "" },
-//  { id: 3, source: image3, alt: "image3", description: "" },
-//  { id: 4, source: image4, alt: "image4", description: "" },
+ //  { id: 3, source: image3, alt: "image3", description: "" },
+ //  { id: 4, source: image4, alt: "image4", description: "" },
  //  { id: 4, source: image4, alt: "image4", description: "" },
  { id: 5, source: image5, alt: "image5", description: "" },
  { id: 6, source: image6, alt: "image6", description: "" },
@@ -343,11 +343,11 @@ export const pageImages = [
 
 export const videos = [
  { id: 1, source: video11, alt: "video11", description: "" },
-//  { id: 2, source: video12, alt: "video12", description: "" },
-//  { id: 3, source: video13, alt: "video13", description: "" },
-//  { id: 4, source: video23, alt: "video23", description: "" },
-//  { id: 5, source: video24, alt: "video24", description: "" },
-//  { id: 6, source: video25, alt: "video25", description: "" },
+  { id: 2, source: video12, alt: "video12", description: "" },
+  { id: 3, source: video13, alt: "video13", description: "" },
+  { id: 4, source: video23, alt: "video23", description: "" },
+  { id: 5, source: video24, alt: "video24", description: "" },
+  { id: 6, source: video25, alt: "video25", description: "" },
 ];
 
 export const activeLink = "text-sky-400";
@@ -636,6 +636,23 @@ export const contactLinkedIn = [
   id: 1,
   value: "linkedIn",
   href: "linkedIn",
+ },
+];
+
+export const subsidiaries = [
+ {
+  id: 1,
+  name: "Sasmarin Company Limited",
+  info: [
+   "Aluminum and Agon welding",
+   "Plates and Stainless materials supplies",
+   "Electrical engineering",
+  ],
+ },
+ {
+  id: 2,
+  name: "Davmas Company Limited",
+  info: ["Tank cleaning", "Sandblasting", "Diving support systems"],
  },
 ];
 
