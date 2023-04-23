@@ -343,8 +343,6 @@ export const videos = [
   { id: 6, source: "https://chriscomikeng.com/videos/VID-20230404-WA0025.mp4", alt: "video25", description: "" },
 ];
 
-
-
 export const activeLink = "text-sky-400";
 export const navigation = [
  { id: 1, name: "About", path: "/about" },
