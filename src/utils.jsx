@@ -1,20 +1,9 @@
-import bost from "./assets/images/logos/bost.jpg";
-import supermaritime from "./assets/images/logos/supermaritime.jpg";
-import temaport from "./assets/images/logos/temaport.jpeg";
-import tor from "./assets/images/logos/tor.png";
-import ubi from "./assets/images/logos/ubi.png";
-import vra from "./assets/images/logos/vra.webp";
-
 import about_us from "./assets/images/web/about-us.jpeg";
 import about_us2 from "./assets/images/web/about-us2.png";
 import contact1 from "./assets/images/web/contact1.jpeg";
 import contact2 from "./assets/images/web/contact2.jpeg";
 import contact3 from "./assets/images/web/contact3.webp";
 import gallery from "./assets/images/web/gallery.jpeg";
-import pipeline from "./assets/images/web/pipeline ocean.jpg";
-import deck from "./assets/images/web/man woman on deck.jpg";
-import heavy_machines from "./assets/images/web/smiling man heavy machines.jpg";
-import reflector_port from "./assets/images/web/two men reflector port.jpg";
 
 import two from "./assets/images/pics/2.jpg";
 import three from "./assets/images/pics/3.jpg";
@@ -78,206 +67,46 @@ import image20 from "./assets/images/pics/IMG-20230404-WA0020.jpg";
 import image21 from "./assets/images/pics/IMG-20230404-WA0021.jpg";
 import image22 from "./assets/images/pics/IMG-20230404-WA0022.jpg";
 
+const site_url = import.meta.env.VITE_URL;
+
 export const companyImages1 = [
- {
-  id: 35,
-  source: thirtyfive,
-  alt: "thirtyfive",
-  description: "Chriscomik engineers fabricating a stage on SW-10",
- },
- {
-  id: 36,
-  source: thirtysix,
-  alt: "thirtysix",
-  description: "Chriscomik engineers fixing a crane on SW-10",
- },
- {
-  id: 41,
-  source: fortyone,
-  alt: "fortyone",
-  description: "Our engineers fabricating and welding of pipeline on SW-10",
- },
- {
-  id: 42,
-  source: fortytwo,
-  alt: "fortytwo",
-  description: "Chriscomik engineers fixing a diving LARS on NVKOMODO",
- },
- {
-  id: 43,
-  source: fortythree,
-  alt: "fortythree",
-  description: "Our engineers fixing a diving LARS on NVKOMODO",
- },
- //  { id: 44, source: fortytwo, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO"  },
- {
-  id: 2,
-  source: two,
-  alt: "two",
-  description: "A diving equipment for SW-10",
- },
- {
-  id: 24,
-  source: twentyfour,
-  alt: "twentyfour",
-  description: "Our engineers changing a hall plate",
- },
- {
-  id: 29,
-  source: twentynine,
-  alt: "twentynine",
-  description: "Our engineers welding on SW-10",
- },
- {
-  id: 31,
-  source: thirtyone,
-  alt: "thirtyone",
-  description: "Our engineers welding on SW-10",
- },
+ { id: 35, source: `${site_url}/images/pics/35.jpg`, alt: "thirtyfive", description: "Chriscomik engineers fabricating a stage on SW-10", },
+ { id: 36, source: `${site_url}/images/pics/36.jpg`, alt: "thirtysix", description: "Chriscomik engineers fixing a crane on SW-10", },
+ { id: 41, source: `${site_url}/images/pics/41.jpg`, alt: "fortyone", description: "Our engineers fabricating and welding of pipeline on SW-10", },
+ { id: 42, source: `${site_url}/images/pics/42.jpg`, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO", },
+ { id: 43, source: `${site_url}/images/pics/43.jpg`, alt: "fortythree", description: "Our engineers fixing a diving LARS on NVKOMODO" }, 
+//  { id: 44, source: fortytwo, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMOD" },
+ { id: 2, source: `${site_url}/images/pics/2.jpg`, alt: "two", description: "A diving equipment for SW-10" },
+ { id: 24, source: `${site_url}/images/pics/24.jpg`, alt: "twentyfour", description: "Our engineers changing a hall plate", },
+ { id: 29, source: `${site_url}/images/pics/29.jpg`, alt: "twentynine", description: "Our engineers welding on SW-10", },
+ { id: 31, source: `${site_url}/images/pics/31.jpg`, alt: "thirtyone", description: "Our engineers welding on SW-10", },
 ];
 
 export const companyImages2 = [
- {
-  id: 3,
-  source: three,
-  alt: "three",
-  description:
-   "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",
- },
- {
-  id: 4,
-  source: four,
-  alt: "four",
-  description:
-   "Chriscomik engineers fabricating and welding at PSC Tema shipyard",
- },
- {
-  id: 5,
-  source: five,
-  alt: "five",
-  description: "Our engineers fabricating and welding at Tema Port",
- },
- {
-  id: 6,
-  source: six,
-  alt: "six",
-  description: "Our engineers fabricating and welding at PSC Tema shipyard",
- },
- {
-  id: 7,
-  source: seven,
-  alt: "seven",
-  description: "Working on propeller shaft at PSC Tema shipyard",
- },
- {
-  id: 8,
-  source: eight,
-  alt: "eight",
-  description: "Heavy duty cutting machine at Chriscomik workshop",
- },
- {
-  id: 9,
-  source: nine,
-  alt: "nine",
-  description: "Fabricating and inserting a new plate at Tema Port",
- },
+ { id: 3, source: three, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10", },
+ { id: 4, source: four, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", },
+ { id: 5, source: five, alt: "five", description: "Our engineers fabricating and welding at Tema Port", },
+ { id: 6, source: six, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", },
+ { id: 7, source: seven, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", },
+ { id: 8, source: eight, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", },
+ { id: 9, source: nine, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", },
  { id: 10, source: ten, alt: "ten", description: "Fabricating and welding" },
- {
-  id: 11,
-  source: eleven,
-  alt: "eleven",
-  description: "A roller machine machine at Chriscomik workshop",
- },
- {
-  id: 12,
-  source: twelve,
-  alt: "twelve",
-  description: "Heavy duty cutting machine at Chriscomik workshop",
- },
- {
-  id: 14,
-  source: fourteen,
-  alt: "fourteen",
-  description: "A fabricated blower machine at workshop",
- },
- {
-  id: 13,
-  source: thirteen,
-  alt: "thirteen",
-  description: "Welding and fabricating blower foundation at workshop",
- },
- {
-  id: 15,
-  source: fifteen,
-  alt: "fifteen",
-  description: "Welding and fabricating blower foundation at workshop",
- },
- {
-  id: 17,
-  source: seventeen,
-  alt: "seventeen",
-  description: "Chriscomik CEO and captain of MV Elena",
- },
- {
-  id: 22,
-  source: twentytwo,
-  alt: "twentytwo",
-  description: "MV Elena after welding and fabrication at Tema Port",
- },
- {
-  id: 26,
-  source: twentysix,
-  alt: "twentysix",
-  description: "Working on the propeller shaft at PSC Tema Shipyard",
- },
- {
-  id: 27,
-  source: twentyseven,
-  alt: "twentyseven",
-  description: "Sand blasting and painting at PSC Tema Shipyard",
- },
- {
-  id: 28,
-  source: twentyeight,
-  alt: "twentyeight",
-  description: "Welding and fabrication on NVKOMODO",
- },
- {
-  id: 30,
-  source: thirty,
-  alt: "thirty",
-  description: "Sand blasting at PSC Tema Shipyard",
- },
- {
-  id: 32,
-  source: thirtytwo,
-  alt: "thirtytwo",
-  description: "Some pressure pipes",
- },
- {
-  id: 37,
-  source: thirtyseven,
-  alt: "thirtyseven",
-  description: "Our engineers fabricating a staircase SW-10",
- },
- {
-  id: 40,
-  source: forty,
-  alt: "forty",
-  description: "Welding and fabrication at Tema Port",
- },
- {
-  id: 39,
-  source: thirtynine,
-  alt: "thirtynine",
-  description: "Steel plate insertion",
- },
- {
-  id: 33,
-  source: thirtythree,
-  alt: "thirtythree",
-  description: "Chriscomik engineers welding and fabrication at the workshop",
- },
+ { id: 11, source: eleven, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", },
+ { id: 12, source: twelve, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", },
+ { id: 14, source: fourteen, alt: "fourteen", description: "A fabricated blower machine at workshop", },
+ { id: 13, source: thirteen, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", },
+ { id: 15, source: fifteen, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", },
+ { id: 17, source: seventeen, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", },
+ { id: 22, source: twentytwo, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", },
+ { id: 26, source: twentysix, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", },
+ { id: 27, source: twentyseven, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", },
+ { id: 28, source: twentyeight, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", },
+ { id: 30, source: thirty, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", },
+ { id: 32, source: thirtytwo, alt: "thirtytwo", description: "Some pressure pipes", },
+ { id: 37, source: thirtyseven, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", },
+ { id: 40, source: forty, alt: "forty", description: "Welding and fabrication at Tema Port", },
+ { id: 39, source: thirtynine, alt: "thirtynine", description: "Steel plate insertion", },
+ { id: 33, source: thirtythree, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", },
  //  { id: 34, source: thirtyfour, alt: "thirtyfour" },
  //  { id: 38, source: thirtyeight, alt: "thirtyeight" },
  // { id: 16, source: sixteen, alt: "sixteen" },
@@ -310,37 +139,37 @@ export const companyImages3 = [
 ];
 
 export const logos = [
- { id: 1, source: "https://chriscomikeng.com/images/logos/ubi.png", alt: "ubi" },
- { id: 2, source: "https://chriscomikeng.com/images/logos/bost.jpg", alt: "bost" },
- { id: 3, source: 'https://chriscomikeng.com/images/logos/supermaritime.jpg', alt: "supermaritime" },
- { id: 4, source: "https://chriscomikeng.com/images/logos/temaport.jpeg", alt: "temaport" },
- { id: 5, source: "https://chriscomikeng.com/images/logos/tor.png", alt: "tor" },
- { id: 6, source: "https://chriscomikeng.com/images/logos/vra.webp", alt: "vra" },
+ { id: 1, source: `${site_url}/images/logos/ubi.png`, alt: "ubi" },
+ { id: 2, source: `${site_url}/images/logos/bost.jpg`, alt: "bost" },
+ { id: 3, source: `${site_url}/images/logos/supermaritime.jpg`, alt: "supermaritime" },
+ { id: 4, source: `${site_url}/images/logos/temaport.jpeg`, alt: "temaport" },
+ { id: 5, source: `${site_url}/images/logos/tor.png`, alt: "tor" },
+ { id: 6, source: `${site_url}/images/logos/vra.webp`, alt: "vra" },
 ];
 
 export const webImages = [
- { id: 1, source: pipeline, alt: "pipeline" },
- { id: 2, source: deck, alt: "deck" },
- { id: 3, source: heavy_machines, alt: "heavy_machines" },
- { id: 4, source: reflector_port, alt: "reflector_port" },
+ { id: 1, source: `${site_url}/images/web/pipeline ocean.jpg`, alt: "pipeline" },
+ { id: 2, source: `${site_url}/images/web/man woman on deck.jpg`, alt: "deck" },
+ { id: 3, source: `${site_url}/images/web/smiling man heavy machines.jpg`, alt: "heavy_machines" },
+ { id: 4, source: `${site_url}/images/web/two men reflector port.jpg`, alt: "reflector_port" },
 ];
 
 export const pageImages = [
- { id: 1, source: about_us, alt: "about_us" },
- { id: 2, source: about_us2, alt: "about_us2" },
- { id: 3, source: contact1, alt: "contact1" },
- { id: 4, source: contact2, alt: "contact2" },
- { id: 5, source: contact3, alt: "contact3" },
- { id: 6, source: gallery, alt: "gallery" },
+ { id: 1, source: `${site_url}/images/web/about-us.jpeg`, alt: "about_us" },
+ { id: 2, source: `${site_url}/images/web/about-us2.jpeg`, alt: "about_us2" },
+ { id: 3, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact1" },
+ { id: 4, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact2" },
+ { id: 5, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact3" },
+ { id: 6, source: `${site_url}/images/web/gallery.jpeg`, alt: "gallery" },
 ];
 
 export const videos = [
-  { id: 1, source: "https://chriscomikeng.com/videos/VID-20230222-WA0011.mp4", alt: "video11", description: "" },
-  { id: 2, source: "https://chriscomikeng.com/videos/VID-20230222-WA0012.mp4", alt: "video12", description: "" },
-  { id: 3, source: "https://chriscomikeng.com/videos/VID-20230222-WA0013.mp4", alt: "video13", description: "" },
-  { id: 4, source: "https://chriscomikeng.com/videos/VID-20230404-WA0023.mp4", alt: "video23", description: "" },
-  { id: 5, source: "https://chriscomikeng.com/videos/VID-20230404-WA0024.mp4", alt: "video24", description: "" },
-  { id: 6, source: "https://chriscomikeng.com/videos/VID-20230404-WA0025.mp4", alt: "video25", description: "" },
+ { id: 1, source: `${site_url}/videos/VID-20230222-WA0011.mp4`, alt: "video11", description: "" },
+ { id: 2, source: `${site_url}/videos/VID-20230222-WA0012.mp4`, alt: "video12", description: "" },
+ { id: 3, source: `${site_url}/videos/VID-20230222-WA0013.mp4`, alt: "video13", description: "" },
+ { id: 4, source: `${site_url}/videos/VID-20230404-WA0023.mp4`, alt: "video23", description: "" },
+ { id: 5, source: `${site_url}/videos/VID-20230404-WA0024.mp4`, alt: "video24", description: "" },
+ { id: 6, source: `${site_url}/videos/VID-20230404-WA0025.mp4`, alt: "video25", description: "" },
 ];
 
 export const activeLink = "text-sky-400";
@@ -428,144 +257,37 @@ export const aboutStats = [
 ];
 
 export const companyStats = [
- {
-  id: 1,
-  label: "Customer Satisfaction",
-  value: "100%",
-  css: "flex flex-col",
- },
- {
-  id: 2,
-  label: "Service Delivery",
-  value: "24/7",
-  css: "mt-10 flex flex-col sm:mt-0",
- },
- {
-  id: 3,
-  label: aboutStats[2].label,
-  value: aboutStats[2].value,
-  css: "mt-10 flex flex-col sm:mt-0",
- },
+ { id: 1, label: "Customer Satisfaction", value: "100%", css: "flex flex-col" },
+ { id: 2, label: "Service Delivery", value: "24/7", css: "mt-10 flex flex-col sm:mt-0" },
+ { id: 3, label: aboutStats[2].label, value: aboutStats[2].value, css: "mt-10 flex flex-col sm:mt-0" },
 ];
 // 28 August
 // src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
 
 export const offices = [
- {
-  id: 1,
-  city: "Community 1",
-  address: ["Near Padmore School", "Tema, Ghana"],
- },
- {
-  id: 2,
-  city: "Community 9",
-  address: ["Off The General Hospital Road Bypass V1", "Tema, Ghana"],
- },
+ { id: 1, city: "Community 1", address: ["Near Padmore School", "Tema, Ghana"] },
+ { id: 2, city: "Community 9", address: ["Off The General Hospital Road Bypass V1", "Tema, Ghana"] },
 ];
 
 export const faqs = [
- {
-  question: "What is Chriscomikeng?",
-  answer:
-   "Chriscomikeng is an engineering company which provides a complete range of services related to mechanical, marine & electrical engineering services. We are committed to delivering high-quality and reliable solutions through a single point of contact, which reduces administrative costs and saves valuable time.",
- },
- //  {
- //   question: "What does Chriscomikeng stand for",
- //   answer: "W-I-P",
- //  },
- {
-  question: "What is Chriscomikeng’s mission / purpose statement?",
-  answer:
-   "Our aim is to work with our clients to enhance the supply chain strength through cooperation, communication, innovation and teamwork.",
- },
- {
-  question: "What is Chriscomikeng's vision as a company?",
-  answer:
-   "Our vision is to become the most respectful and trustworthy firm in the delivery of professional services including sales and technical support services by adapting appropriate state of art technology.",
- },
- {
-  question: "What industries does Chriscomikeng operate in?",
-  answer:
-   "Chriscomikeng leads in delivering solutions across Shipping, Marine, Oil & Gas.",
- },
- {
-  question: "Is Chriscomikeng a Ghanain Company?",
-  answer:
-   "Chriscomikeng is a wholly owned Ghanaian company with a footprint across Africa, incorporated in Accra, Ghana and headquartered in Tema.",
- },
- {
-  question: "How many countries does Chriscomikeng operate in",
-  answer:
-   "Due to our best in class service delivery, our services have been engaged across Africa in countries like Nigeria etc.",
- },
- {
-  question: "What does Chriscomikeng do?",
-  answer:
-   "CHRISCOMIK COMPANY LTD specializes in providing Mechanical & Marine Engineering, Welding/Fabrication, Steel Rust Control And Protection, Procurement, Shipping Agency services and supplying Electricals/Instruments, Renting Of Heavy Duty Equipment And Earth Moving Machines.",
- },
-
- {
-  question: "How do I contact Chriscomikeng",
-  answer:
-   "You can find contact details for Chriscomikeng on our Contacts page.",
- },
+ { question: "What is Chriscomikeng?", answer:  "Chriscomikeng is an engineering company which provides a complete range of services related to mechanical, marine & electrical engineering services. We are committed to delivering high-quality and reliable solutions through a single point of contact, which reduces administrative costs and saves valuable time." }, 
+ { question: "What does Chriscomikeng stand for",  answer: "W-I-P", },
+ { question: "What is Chriscomikeng’s mission / purpose statement?", answer:  "Our aim is to work with our clients to enhance the supply chain strength through cooperation, communication, innovation and teamwork." },
+ { question: "What is Chriscomikeng's vision as a company?", answer:  "Our vision is to become the most respectful and trustworthy firm in the delivery of professional services including sales and technical support services by adapting appropriate state of art technology." },
+ { question: "What industries does Chriscomikeng operate in?", answer:  "Chriscomikeng leads in delivering solutions across Shipping, Marine, Oil & Gas." },
+ { question: "Is Chriscomikeng a Ghanain Company?", answer:  "Chriscomikeng is a wholly owned Ghanaian company with a footprint across Africa, incorporated in Accra, Ghana and headquartered in Tema." },
+ { question: "How many countries does Chriscomikeng operate in", answer:  "Due to our best in class service delivery, our services have been engaged across Africa in countries like Nigeria etc." },
+ { question: "What does Chriscomikeng do?", answer:  "CHRISCOMIK COMPANY LTD specializes in providing Mechanical & Marine Engineering, Welding/Fabrication, Steel Rust Control And Protection, Procurement, Shipping Agency services and supplying Electricals/Instruments, Renting Of Heavy Duty Equipment And Earth Moving Machines." },
+ { question: "How do I contact Chriscomikeng", answer:  "You can find contact details for Chriscomikeng on our Contacts page." }
 ];
 
 export const teams = [
- {
-  id: 1,
-  name: "Lindsay Walton",
-  role: "Front-end Developer",
-  imageUrl:
-   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  twitterUrl: "#",
-  linkedinUrl: "#",
- },
- {
-  id: 2,
-  name: "Lindsay Walton",
-  role: "Front-end Developer",
-  imageUrl:
-   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  twitterUrl: "#",
-  linkedinUrl: "#",
- },
- {
-  id: 3,
-  name: "Lindsay Walton",
-  role: "Front-end Developer",
-  imageUrl:
-   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  twitterUrl: "#",
-  linkedinUrl: "#",
- },
- {
-  id: 4,
-  name: "Lindsay Walton",
-  role: "Front-end Developer",
-  imageUrl:
-   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  twitterUrl: "#",
-  linkedinUrl: "#",
- },
- {
-  id: 5,
-  name: "Lindsay Walton",
-  role: "Front-end Developer",
-  imageUrl:
-   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  twitterUrl: "#",
-  linkedinUrl: "#",
- },
- {
-  id: 6,
-  name: "Lindsay Walton",
-  role: "Front-end Developer",
-  imageUrl:
-   "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  twitterUrl: "#",
-  linkedinUrl: "#",
- },
+ { id: 1, name: "Lindsay Walton", role: "Front-end Developer", imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80", twitterUrl: "#", linkedinUrl: "#" },
+ { id: 2, name: "Lindsay Walton", role: "Front-end Developer", imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80", twitterUrl: "#", linkedinUrl: "#" },
+ { id: 3, name: "Lindsay Walton", role: "Front-end Developer", imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80", twitterUrl: "#", linkedinUrl: "#" },
+ { id: 4, name: "Lindsay Walton", role: "Front-end Developer", imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80", twitterUrl: "#", linkedinUrl: "#" },
+ { id: 5, name: "Lindsay Walton", role: "Front-end Developer", imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80", twitterUrl: "#", linkedinUrl: "#" },
+ { id: 6, name: "Lindsay Walton", role: "Front-end Developer", imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80", twitterUrl: "#", linkedinUrl: "#" },
 ];
 
 const people = [
@@ -578,75 +300,27 @@ const people = [
 ];
 
 export const activityItems = [
- {
-  id: 1,
-  person: people[0],
-  project: "Workcation",
-  commit: "2d89f0c8",
-  environment: "production",
-  time: "1h",
- },
+ { id: 1, person: people[0], project: "Workcation", commit: "2d89f0c8", environment: "production", time: "1h" },
 ];
 
 export const contactPhone = [
- {
-  id: 1,
-  value: "+233 554-158101",
-  link: "tel:+233554158101",
-  css: "",
- },
- {
-  id: 2,
-  value: "+233 249-688556",
-  link: "tel:+233249688556",
-  css: "py-1",
- },
- {
-  id: 3,
-  value: "+233 242-934334",
-  link: "tel:+233242934334",
-  css: "py-1",
- },
+ { id: 1, value: "+233 554-158101", link: "tel:+233554158101", css: "" },
+ { id: 2, value: "+233 249-688556", link: "tel:+233249688556", css: "py-1" },
+ { id: 3, value: "+233 242-934334", link: "tel:+233242934334", css: "py-1" },
 ];
 
 export const contactEmail = [
- {
-  id: 1,
-  value: "chriscomiceng@gmail.com",
-  link: "mailto:chriscomiceng@gmail.com",
-  css: "",
- },
- {
-  id: 2,
-  value: "michaelchriscomik@gmail.com",
-  link: "mailto:michaelchriscomik@gmail.com",
-  css: "py-1",
- },
+ { id: 1, value: "chriscomiceng@gmail.com", link: "mailto:chriscomiceng@gmail.com", css: "" },
+ { id: 2, value: "michaelchriscomik@gmail.com", link: "mailto:michaelchriscomik@gmail.com", css: "py-1" },
 ];
 
 export const contactLinkedIn = [
- {
-  id: 1,
-  value: "linkedIn",
-  href: "linkedIn",
- },
+ { id: 1, value: "linkedIn", href: "linkedIn" },
 ];
 
 export const subsidiaries = [
- {
-  id: 1,
-  name: "Sasmarin Company Limited",
-  info: [
-   "Aluminum and Agon welding",
-   "Plates and Stainless materials supplies",
-   "Electrical engineering",
-  ],
- },
- {
-  id: 2,
-  name: "Davmas Company Limited",
-  info: ["Tank cleaning", "Sandblasting", "Diving support systems"],
- },
+ { id: 1, name: "Sasmarin Company Limited", info: [  "Aluminum and Agon welding",  "Plates and Stainless materials supplies",  "Electrical engineering", ] },
+ { id: 2, name: "Davmas Company Limited", info: ["Tank cleaning", "Sandblasting", "Diving support systems"] },
 ];
 
 export const default_image =
