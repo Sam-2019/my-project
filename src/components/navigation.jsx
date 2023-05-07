@@ -2,8 +2,7 @@ import { Fragment } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { navigation, activeLink } from "../utils";
-import companyLogo from "../assets/images/logos/chriscomikeng.png";
+import { navigation, activeLink, companyLogo } from "../utils";
 
 export default function Navigation() {
  return (
