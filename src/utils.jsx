@@ -1,11 +1,3 @@
-import about_us from "./assets/images/web/about-us.jpeg";
-import about_us2 from "./assets/images/web/about-us2.png";
-import contact1 from "./assets/images/web/contact1.jpeg";
-import contact2 from "./assets/images/web/contact2.jpeg";
-import contact3 from "./assets/images/web/contact3.webp";
-import gallery from "./assets/images/web/gallery.jpeg";
-
-import two from "./assets/images/pics/2.jpg";
 import three from "./assets/images/pics/3.jpg";
 import four from "./assets/images/pics/4.jpg";
 import five from "./assets/images/pics/5.jpg";
@@ -19,35 +11,21 @@ import twelve from "./assets/images/pics/12.jpg";
 import thirteen from "./assets/images/pics/13.jpg";
 import fourteen from "./assets/images/pics/14.jpg";
 import fifteen from "./assets/images/pics/15.jpg";
-import sixteen from "./assets/images/pics/16.jpg";
+
 import seventeen from "./assets/images/pics/17.jpg";
 import twentytwo from "./assets/images/pics/22.jpg";
-import twentyfour from "./assets/images/pics/24.jpg";
-import twentyfive from "./assets/images/pics/25.jpg";
 import twentysix from "./assets/images/pics/26.jpg";
 import twentyseven from "./assets/images/pics/27.jpg";
 import twentyeight from "./assets/images/pics/28.jpg";
-import twentynine from "./assets/images/pics/29.jpg";
 import thirty from "./assets/images/pics/30.jpg";
-import thirtyone from "./assets/images/pics/31.jpg";
 import thirtytwo from "./assets/images/pics/32.jpg";
 import thirtythree from "./assets/images/pics/33.jpg";
-import thirtyfour from "./assets/images/pics/34.jpg";
-import thirtyfive from "./assets/images/pics/35.jpg";
-import thirtysix from "./assets/images/pics/36.jpg";
 import thirtyseven from "./assets/images/pics/37.jpg";
-import thirtyeight from "./assets/images/pics/38.jpg";
 import thirtynine from "./assets/images/pics/39.jpg";
 import forty from "./assets/images/pics/40.jpg";
-import fortyone from "./assets/images/pics/41.jpg";
-import fortytwo from "./assets/images/pics/42.jpg";
-import fortythree from "./assets/images/pics/43.jpg";
-import fortyfour from "./assets/images/pics/44.jpg";
+
 
 import image2 from "./assets/images/pics/IMG-20230402-WA0002.jpg";
-import image3 from "./assets/images/pics/IMG-20230402-WA0003.jpg";
-import image4 from "./assets/images/pics/IMG-20230402-WA0004.jpg";
-import image4i from "./assets/images/pics/IMG-20230404-WA0004.jpg";
 import image5 from "./assets/images/pics/IMG-20230404-WA0005.jpg";
 import image6 from "./assets/images/pics/IMG-20230404-WA0006.jpg";
 import image7 from "./assets/images/pics/IMG-20230404-WA0007.jpg";
@@ -172,6 +150,7 @@ export const videos = [
  { id: 6, source: `${site_url}/videos/VID-20230404-WA0025.mp4`, alt: "video25", description: "" },
 ];
 
+export const companyLogo = `${site_url}/images/logos/chriscomik_1.png`
 export const activeLink = "text-sky-400";
 export const navigation = [
  { id: 1, name: "About", path: "/about" },
