@@ -53,7 +53,6 @@ export const companyImages1 = [
  { id: 41, source: `${site_url}/images/pics/41.jpg`, alt: "fortyone", description: "Our engineers fabricating and welding of pipeline on SW-10", },
  { id: 42, source: `${site_url}/images/pics/42.jpg`, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO", },
  { id: 43, source: `${site_url}/images/pics/43.jpg`, alt: "fortythree", description: "Our engineers fixing a diving LARS on NVKOMODO" }, 
-//  { id: 44, source: fortytwo, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMOD" },
  { id: 2, source: `${site_url}/images/pics/2.jpg`, alt: "two", description: "A diving equipment for SW-10" },
  { id: 24, source: `${site_url}/images/pics/24.jpg`, alt: "twentyfour", description: "Our engineers changing a hall plate", },
  { id: 29, source: `${site_url}/images/pics/29.jpg`, alt: "twentynine", description: "Our engineers welding on SW-10", },
@@ -85,17 +84,10 @@ export const companyImages2 = [
  { id: 40, source: forty, alt: "forty", description: "Welding and fabrication at Tema Port", },
  { id: 39, source: thirtynine, alt: "thirtynine", description: "Steel plate insertion", },
  { id: 33, source: thirtythree, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", },
- //  { id: 34, source: thirtyfour, alt: "thirtyfour" },
- //  { id: 38, source: thirtyeight, alt: "thirtyeight" },
- // { id: 16, source: sixteen, alt: "sixteen" },
- // { id: 25, source: twentyfive, alt: "twentyfive" },
 ];
 
 export const companyImages3 = [
  { id: 2, source: image2, alt: "image2", description: "" },
- //  { id: 3, source: image3, alt: "image3", description: "" },
- //  { id: 4, source: image4, alt: "image4", description: "" },
- //  { id: 4, source: image4, alt: "image4", description: "" },
  { id: 5, source: image5, alt: "image5", description: "" },
  { id: 6, source: image6, alt: "image6", description: "" },
  { id: 7, source: image7, alt: "image7", description: "" },
