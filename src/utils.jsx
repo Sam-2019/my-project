@@ -46,6 +46,8 @@ import image21 from "./assets/images/pics/IMG-20230404-WA0021.jpg";
 import image22 from "./assets/images/pics/IMG-20230404-WA0022.jpg";
 
 const site_url = import.meta.env.VITE_URL;
+const standardWidth = 550
+const outlierWidth = 450
 
 export const companyImages1 = [
  { id: 35, source: `${site_url}/images/pics/35.jpg`, alt: "thirtyfive", description: "Chriscomik engineers fabricating a stage on SW-10", },
@@ -60,53 +62,56 @@ export const companyImages1 = [
 ];
 
 export const companyImages2 = [
- { id: 3, source: three, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10", },
- { id: 4, source: four, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", },
- { id: 5, source: five, alt: "five", description: "Our engineers fabricating and welding at Tema Port", },
- { id: 6, source: six, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", },
- { id: 7, source: seven, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", },
- { id: 8, source: eight, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", },
- { id: 9, source: nine, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", },
- { id: 10, source: ten, alt: "ten", description: "Fabricating and welding" },
- { id: 11, source: eleven, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", },
- { id: 12, source: twelve, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", },
- { id: 14, source: fourteen, alt: "fourteen", description: "A fabricated blower machine at workshop", },
- { id: 13, source: thirteen, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", },
- { id: 15, source: fifteen, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", },
- { id: 17, source: seventeen, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", },
- { id: 22, source: twentytwo, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", },
- { id: 26, source: twentysix, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", },
- { id: 27, source: twentyseven, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", },
- { id: 28, source: twentyeight, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", },
- { id: 30, source: thirty, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", },
- { id: 32, source: thirtytwo, alt: "thirtytwo", description: "Some pressure pipes", },
- { id: 37, source: thirtyseven, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", },
- { id: 40, source: forty, alt: "forty", description: "Welding and fabrication at Tema Port", },
- { id: 39, source: thirtynine, alt: "thirtynine", description: "Steel plate insertion", },
- { id: 33, source: thirtythree, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", },
+ { id: 3, source: three, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",  width: standardWidth},
+ { id: 4, source: four, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
+ { id: 5, source: five, alt: "five", description: "Our engineers fabricating and welding at Tema Port", width: standardWidth},
+ { id: 6, source: six, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
+ { id: 7, source: seven, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", width: standardWidth},
+ { id: 8, source: eight, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
+ { id: 9, source: nine, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", width: standardWidth},
+ { id: 10, source: ten, alt: "ten", description: "Fabricating and welding", width: standardWidth},
+ { id: 11, source: eleven, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", width: standardWidth},
+ { id: 12, source: twelve, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
+ { id: 14, source: fourteen, alt: "fourteen", description: "A fabricated blower machine at workshop", width: standardWidth},
+ { id: 13, source: thirteen, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
+ { id: 15, source: fifteen, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
+ { id: 17, source: seventeen, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", width: standardWidth},
+ { id: 22, source: twentytwo, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", width: standardWidth},
+ { id: 26, source: twentysix, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", width: standardWidth},
+ { id: 27, source: twentyseven, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", width: standardWidth},
+ { id: 28, source: twentyeight, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", width: standardWidth},
+ { id: 30, source: thirty, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", width: standardWidth},
+ { id: 32, source: thirtytwo, alt: "thirtytwo", description: "Some pressure pipes", width: standardWidth},
+ { id: 37, source: thirtyseven, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", width: standardWidth},
+ { id: 40, source: forty, alt: "forty", description: "Welding and fabrication at Tema Port", width: standardWidth},
+ { id: 39, source: thirtynine, alt: "thirtynine", description: "Steel plate insertion", width: standardWidth},
+ { id: 33, source: thirtythree, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", width: standardWidth},
 ];
 
 export const companyImages3 = [
- { id: 2, source: image2, alt: "image2", description: "" },
- { id: 5, source: image5, alt: "image5", description: "" },
- { id: 6, source: image6, alt: "image6", description: "" },
- { id: 7, source: image7, alt: "image7", description: "" },
- { id: 8, source: image8, alt: "image8", description: "" },
- { id: 9, source: image9, alt: "image9", description: "" },
- { id: 10, source: image10, alt: "image10", description: "" },
- { id: 11, source: image11, alt: "image11", description: "" },
- { id: 12, source: image12, alt: "image12", description: "" },
- { id: 13, source: image13, alt: "image13", description: "" },
- { id: 14, source: image14, alt: "image14", description: "" },
- { id: 15, source: image15, alt: "image15", description: "" },
- { id: 16, source: image16, alt: "image16", description: "" },
- { id: 17, source: image17, alt: "image17", description: "" },
- { id: 18, source: image18, alt: "image18", description: "" },
- { id: 19, source: image19, alt: "image19", description: "" },
- { id: 20, source: image20, alt: "image20", description: "" },
- { id: 21, source: image21, alt: "image21", description: "" },
- { id: 22, source: image22, alt: "image22", description: "" },
+  { id: 7, source: image7, alt: "image7", description: "", width: standardWidth },
+ { id: 8, source: image8, alt: "image8", description: "", width: standardWidth },
+ { id: 10, source: image10, alt: "image10", description: "", width: standardWidth },
+ { id: 11, source: image11, alt: "image11", description: "", width: standardWidth },
+ { id: 12, source: image12, alt: "image12", description: "", width: standardWidth },
+ { id: 13, source: image13, alt: "image13", description: "", width: standardWidth },
+ { id: 14, source: image14, alt: "image14", description: "", width: standardWidth },
+ { id: 15, source: image15, alt: "image15", description: "", width: standardWidth },
+ { id: 16, source: image16, alt: "image16", description: "", width: standardWidth },
+ { id: 17, source: image17, alt: "image17", description: "", width: standardWidth },
+ { id: 18, source: image18, alt: "image18", description: "", width: standardWidth },
+ { id: 19, source: image19, alt: "image19", description: "", width: standardWidth },
+ { id: 20, source: image20, alt: "image20", description: "", width: standardWidth },
+ { id: 21, source: image21, alt: "image21", description: "", width: standardWidth },
+ { id: 22, source: image22, alt: "image22", description: "", width: standardWidth },
+ { id: 2, source: image2, alt: "image2", description: "", width: standardWidth },
 ];
+
+export const outliers = [
+  { id: 5, source: image5, alt: "image5", description: "", width: outlierWidth },
+  { id: 6, source: image6, alt: "image6", description: "", width: outlierWidth },
+  { id: 9, source: image9, alt: "image9", description: "", width: outlierWidth },
+]
 
 export const logos = [
  { id: 1, source: `${site_url}/images/logos/ubi.png`, alt: "ubi" },
