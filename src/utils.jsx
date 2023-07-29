@@ -1,50 +1,3 @@
-import three from "./assets/images/pics/3.jpg";
-import four from "./assets/images/pics/4.jpg";
-import five from "./assets/images/pics/5.jpg";
-import six from "./assets/images/pics/6.jpg";
-import seven from "./assets/images/pics/7.jpg";
-import eight from "./assets/images/pics/8.jpg";
-import nine from "./assets/images/pics/9.jpg";
-import ten from "./assets/images/pics/10.jpg";
-import eleven from "./assets/images/pics/11.jpg";
-import twelve from "./assets/images/pics/12.jpg";
-import thirteen from "./assets/images/pics/13.jpg";
-import fourteen from "./assets/images/pics/14.jpg";
-import fifteen from "./assets/images/pics/15.jpg";
-
-import seventeen from "./assets/images/pics/17.jpg";
-import twentytwo from "./assets/images/pics/22.jpg";
-import twentysix from "./assets/images/pics/26.jpg";
-import twentyseven from "./assets/images/pics/27.jpg";
-import twentyeight from "./assets/images/pics/28.jpg";
-import thirty from "./assets/images/pics/30.jpg";
-import thirtytwo from "./assets/images/pics/32.jpg";
-import thirtythree from "./assets/images/pics/33.jpg";
-import thirtyseven from "./assets/images/pics/37.jpg";
-import thirtynine from "./assets/images/pics/39.jpg";
-import forty from "./assets/images/pics/40.jpg";
-
-
-import image2 from "./assets/images/pics/IMG-20230402-WA0002.jpg";
-import image5 from "./assets/images/pics/IMG-20230404-WA0005.jpg";
-import image6 from "./assets/images/pics/IMG-20230404-WA0006.jpg";
-import image7 from "./assets/images/pics/IMG-20230404-WA0007.jpg";
-import image8 from "./assets/images/pics/IMG-20230404-WA0008.jpg";
-import image9 from "./assets/images/pics/IMG-20230404-WA0009.jpg";
-import image10 from "./assets/images/pics/IMG-20230404-WA0010.jpg";
-import image11 from "./assets/images/pics/IMG-20230404-WA0011.jpg";
-import image12 from "./assets/images/pics/IMG-20230404-WA0012.jpg";
-import image13 from "./assets/images/pics/IMG-20230404-WA0013.jpg";
-import image14 from "./assets/images/pics/IMG-20230404-WA0014.jpg";
-import image15 from "./assets/images/pics/IMG-20230404-WA0015.jpg";
-import image16 from "./assets/images/pics/IMG-20230404-WA0016.jpg";
-import image17 from "./assets/images/pics/IMG-20230404-WA0017.jpg";
-import image18 from "./assets/images/pics/IMG-20230404-WA0018.jpg";
-import image19 from "./assets/images/pics/IMG-20230404-WA0019.jpg";
-import image20 from "./assets/images/pics/IMG-20230404-WA0020.jpg";
-import image21 from "./assets/images/pics/IMG-20230404-WA0021.jpg";
-import image22 from "./assets/images/pics/IMG-20230404-WA0022.jpg";
-
 const site_url = import.meta.env.VITE_URL;
 const standardWidth = 550
 const outlierWidth = 450
@@ -62,35 +15,35 @@ export const companyImages1 = [
 ];
 
 export const companyImages2 = [
- { id: 3, source: three, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",  width: standardWidth},
- { id: 4, source: four, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
- { id: 5, source: five, alt: "five", description: "Our engineers fabricating and welding at Tema Port", width: standardWidth},
- { id: 6, source: six, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
- { id: 7, source: seven, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", width: standardWidth},
- { id: 8, source: eight, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
- { id: 9, source: nine, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", width: standardWidth},
- { id: 10, source: ten, alt: "ten", description: "Fabricating and welding", width: standardWidth},
- { id: 11, source: eleven, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", width: standardWidth},
- { id: 12, source: twelve, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
- { id: 14, source: fourteen, alt: "fourteen", description: "A fabricated blower machine at workshop", width: standardWidth},
- { id: 13, source: thirteen, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
- { id: 15, source: fifteen, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
- { id: 17, source: seventeen, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", width: standardWidth},
- { id: 22, source: twentytwo, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", width: standardWidth},
- { id: 26, source: twentysix, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", width: standardWidth},
- { id: 27, source: twentyseven, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", width: standardWidth},
- { id: 28, source: twentyeight, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", width: standardWidth},
- { id: 30, source: thirty, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", width: standardWidth},
- { id: 32, source: thirtytwo, alt: "thirtytwo", description: "Some pressure pipes", width: standardWidth},
- { id: 37, source: thirtyseven, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", width: standardWidth},
- { id: 40, source: forty, alt: "forty", description: "Welding and fabrication at Tema Port", width: standardWidth},
- { id: 39, source: thirtynine, alt: "thirtynine", description: "Steel plate insertion", width: standardWidth},
- { id: 33, source: thirtythree, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", width: standardWidth},
+ { id: 3, source: `${site_url}/images/pics/3.jpg`, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",  width: standardWidth},
+ { id: 4, source: `${site_url}/images/pics/4.jpg`, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
+ { id: 5, source: `${site_url}/images/pics/5.jpg`, alt: "five", description: "Our engineers fabricating and welding at Tema Port", width: standardWidth},
+ { id: 6, source: `${site_url}/images/pics/6.jpg`, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
+ { id: 7, source: `${site_url}/images/pics/7.jpg`, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", width: standardWidth},
+ { id: 8, source: `${site_url}/images/pics/8.jpg`, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
+ { id: 9, source: `${site_url}/images/pics/9.jpg`, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", width: standardWidth},
+ { id: 10, source: `${site_url}/images/pics/10.jpg`, alt: "ten", description: "Fabricating and welding", width: standardWidth},
+ { id: 11, source: `${site_url}/images/pics/11.jpg`, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", width: standardWidth},
+ { id: 12, source: `${site_url}/images/pics/12.jpg`, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
+ { id: 14, source: `${site_url}/images/pics/14.jpg`, alt: "fourteen", description: "A fabricated blower machine at workshop", width: standardWidth},
+ { id: 13, source: `${site_url}/images/pics/13.jpg`, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
+ { id: 15, source: `${site_url}/images/pics/15.jpg`, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
+ { id: 17, source: `${site_url}/images/pics/17.jpg`, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", width: standardWidth},
+ { id: 22, source: `${site_url}/images/pics/22.jpg`, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", width: standardWidth},
+ { id: 26, source: `${site_url}/images/pics/26.jpg`, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", width: standardWidth},
+ { id: 27, source: `${site_url}/images/pics/27.jpg`, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", width: standardWidth},
+ { id: 28, source: `${site_url}/images/pics/28.jpg`, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", width: standardWidth},
+ { id: 30, source: `${site_url}/images/pics/30.jpg`, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", width: standardWidth},
+ { id: 32, source: `${site_url}/images/pics/32.jpg`, alt: "thirtytwo", description: "Some pressure pipes", width: standardWidth},
+ { id: 37, source: `${site_url}/images/pics/37.jpg`, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", width: standardWidth},
+ { id: 40, source: `${site_url}/images/pics/40.jpg`, alt: "forty", description: "Welding and fabrication at Tema Port", width: standardWidth},
+ { id: 39, source: `${site_url}/images/pics/39.jpg`, alt: "thirtynine", description: "Steel plate insertion", width: standardWidth},
+ { id: 33, source: `${site_url}/images/pics/33.jpg`, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", width: standardWidth},
 ];
 
 export const companyImages3 = [
  { id: 7, source: `${site_url}/images/pics/IMG-20230404-WA0007.jpg`, alt: "image7", description: "", width: standardWidth },
- { id: 8, source: `${site_url}/images/pics/iIMG-20230404-WA0008.jpg`, alt: "image8", description: "", width: standardWidth },
+ { id: 8, source: `${site_url}/images/pics/IMG-20230404-WA0008.jpg`, alt: "image8", description: "", width: standardWidth },
  { id: 10, source: `${site_url}/images/pics/IMG-20230404-WA0010.jpg`, alt: "image10", description: "", width: standardWidth },
  { id: 11, source: `${site_url}/images/pics/IMG-20230404-WA0011.jpg`, alt: "image11", description: "", width: standardWidth },
  { id: 12, source: `${site_url}/images/pics/IMG-20230404-WA0012.jpg`, alt: "image12", description: "", width: standardWidth },
@@ -104,12 +57,12 @@ export const companyImages3 = [
  { id: 20, source: `${site_url}/images/pics/IMG-20230404-WA0020.jpg`, alt: "image20", description: "", width: standardWidth },
  { id: 21, source: `${site_url}/images/pics/IMG-20230404-WA0021.jpg`, alt: "image21", description: "", width: standardWidth },
  { id: 22, source: `${site_url}/images/pics/IMG-20230404-WA0022.jpg`, alt: "image22", description: "", width: standardWidth },
- { id: 2, source: `${site_url}/images/pics/IMG-20230404-WA002.jpg`, alt: "image2", description: "", width: standardWidth },
+ { id: 2, source: `${site_url}/images/pics/IMG-20230402-WA0002.jpg`, alt: "image2", description: "", width: standardWidth },
 ];
 
 export const outliers = [
   { id: 5, source: `${site_url}/images/pics/IMG-20230404-WA0005.jpg`, alt: "image5", description: "", width: outlierWidth },
-  { id: 6, source: `${site_url}/images/pics/IMG-20230404-WA0006.jpg"`, alt: "image6", description: "", width: outlierWidth },
+  { id: 6, source: `${site_url}/images/pics/IMG-20230404-WA0006.jpg`, alt: "image6", description: "", width: outlierWidth },
   { id: 9, source: `${site_url}/images/pics/IMG-20230404-WA0009.jpg`, alt: "image9", description: "", width: outlierWidth },
 ]
 
