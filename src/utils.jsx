@@ -89,28 +89,28 @@ export const companyImages2 = [
 ];
 
 export const companyImages3 = [
-  { id: 7, source: image7, alt: "image7", description: "", width: standardWidth },
- { id: 8, source: image8, alt: "image8", description: "", width: standardWidth },
- { id: 10, source: image10, alt: "image10", description: "", width: standardWidth },
- { id: 11, source: image11, alt: "image11", description: "", width: standardWidth },
- { id: 12, source: image12, alt: "image12", description: "", width: standardWidth },
- { id: 13, source: image13, alt: "image13", description: "", width: standardWidth },
- { id: 14, source: image14, alt: "image14", description: "", width: standardWidth },
- { id: 15, source: image15, alt: "image15", description: "", width: standardWidth },
- { id: 16, source: image16, alt: "image16", description: "", width: standardWidth },
- { id: 17, source: image17, alt: "image17", description: "", width: standardWidth },
- { id: 18, source: image18, alt: "image18", description: "", width: standardWidth },
- { id: 19, source: image19, alt: "image19", description: "", width: standardWidth },
- { id: 20, source: image20, alt: "image20", description: "", width: standardWidth },
- { id: 21, source: image21, alt: "image21", description: "", width: standardWidth },
- { id: 22, source: image22, alt: "image22", description: "", width: standardWidth },
- { id: 2, source: image2, alt: "image2", description: "", width: standardWidth },
+ { id: 7, source: `${site_url}/images/pics/IMG-20230404-WA0007.jpg`, alt: "image7", description: "", width: standardWidth },
+ { id: 8, source: `${site_url}/images/pics/iIMG-20230404-WA0008.jpg`, alt: "image8", description: "", width: standardWidth },
+ { id: 10, source: `${site_url}/images/pics/IMG-20230404-WA0010.jpg`, alt: "image10", description: "", width: standardWidth },
+ { id: 11, source: `${site_url}/images/pics/IMG-20230404-WA0011.jpg`, alt: "image11", description: "", width: standardWidth },
+ { id: 12, source: `${site_url}/images/pics/IMG-20230404-WA0012.jpg`, alt: "image12", description: "", width: standardWidth },
+ { id: 13, source: `${site_url}/images/pics/IMG-20230404-WA0013.jpg`, alt: "image13", description: "", width: standardWidth },
+ { id: 14, source: `${site_url}/images/pics/IMG-20230404-WA0014.jpg`, alt: "image14", description: "", width: standardWidth },
+ { id: 15, source: `${site_url}/images/pics/IMG-20230404-WA0015.jpg`, alt: "image15", description: "", width: standardWidth },
+ { id: 16, source: `${site_url}/images/pics/IMG-20230404-WA0016.jpg`, alt: "image16", description: "", width: standardWidth },
+ { id: 17, source: `${site_url}/images/pics/IMG-20230404-WA0017.jpg`, alt: "image17", description: "", width: standardWidth },
+ { id: 18, source: `${site_url}/images/pics/IMG-20230404-WA0018.jpg`, alt: "image18", description: "", width: standardWidth },
+ { id: 19, source: `${site_url}/images/pics/IMG-20230404-WA0019.jpg`, alt: "image19", description: "", width: standardWidth },
+ { id: 20, source: `${site_url}/images/pics/IMG-20230404-WA0020.jpg`, alt: "image20", description: "", width: standardWidth },
+ { id: 21, source: `${site_url}/images/pics/IMG-20230404-WA0021.jpg`, alt: "image21", description: "", width: standardWidth },
+ { id: 22, source: `${site_url}/images/pics/IMG-20230404-WA0022.jpg`, alt: "image22", description: "", width: standardWidth },
+ { id: 2, source: `${site_url}/images/pics/IMG-20230404-WA002.jpg`, alt: "image2", description: "", width: standardWidth },
 ];
 
 export const outliers = [
-  { id: 5, source: image5, alt: "image5", description: "", width: outlierWidth },
-  { id: 6, source: image6, alt: "image6", description: "", width: outlierWidth },
-  { id: 9, source: image9, alt: "image9", description: "", width: outlierWidth },
+  { id: 5, source: `${site_url}/images/pics/IMG-20230404-WA0005.jpg`, alt: "image5", description: "", width: outlierWidth },
+  { id: 6, source: `${site_url}/images/pics/IMG-20230404-WA0006.jpg"`, alt: "image6", description: "", width: outlierWidth },
+  { id: 9, source: `${site_url}/images/pics/IMG-20230404-WA0009.jpg`, alt: "image9", description: "", width: outlierWidth },
 ]
 
 export const logos = [
