@@ -190,8 +190,6 @@ export const companyStats = [
  { id: 2, label: "Service Delivery", value: "24/7", css: "mt-10 flex flex-col sm:mt-0" },
  { id: 3, label: aboutStats[2].label, value: aboutStats[2].value, css: "mt-10 flex flex-col sm:mt-0" },
 ];
-// 28 August
-// src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
 
 export const offices = [
  { id: 1, city: "Community 1", address: ["Near Padmore School", "Tema, Ghana"] },
@@ -200,7 +198,7 @@ export const offices = [
 
 export const faqs = [
  { question: "What is Chriscomikeng?", answer:  "Chriscomikeng is an engineering company which provides a complete range of services related to mechanical, marine & electrical engineering services. We are committed to delivering high-quality and reliable solutions through a single point of contact, which reduces administrative costs and saves valuable time." }, 
- { question: "What does Chriscomikeng stand for",  answer: "W-I-P", },
+//  { question: "What does Chriscomikeng stand for",  answer: "W-I-P", },
  { question: "What is Chriscomikeng’s mission / purpose statement?", answer:  "Our aim is to work with our clients to enhance the supply chain strength through cooperation, communication, innovation and teamwork." },
  { question: "What is Chriscomikeng's vision as a company?", answer:  "Our vision is to become the most respectful and trustworthy firm in the delivery of professional services including sales and technical support services by adapting appropriate state of art technology." },
  { question: "What industries does Chriscomikeng operate in?", answer:  "Chriscomikeng leads in delivering solutions across Shipping, Marine, Oil & Gas." },
