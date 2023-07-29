@@ -84,11 +84,12 @@ export const webImages = [
 
 export const pageImages = [
  { id: 1, source: `${site_url}/images/web/about-us.jpeg`, alt: "about_us" },
- { id: 2, source: `${site_url}/images/web/about-us2.jpeg`, alt: "about_us2" },
+ { id: 2, source: `${site_url}/images/web/about-us2.png`, alt: "about_us2" },
  { id: 3, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact1" },
- { id: 4, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact2" },
- { id: 5, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact3" },
+ { id: 4, source: `${site_url}/images/web/contact2.jpeg`, alt: "contact2" },
+ { id: 5, source: `${site_url}/images/web/contact3.webp`, alt: "contact3" },
  { id: 6, source: `${site_url}/images/web/gallery.jpeg`, alt: "gallery" },
+ { id: 7, source: `${site_url}/images/web/faq.jpg`, alt: "faq" },
 ];
 
 export const videos = [

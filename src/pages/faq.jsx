@@ -2,7 +2,7 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import PageHeader from "../components/page_header";
-import { faqs } from "../utils";
+import { faqs, pageImages } from "../utils";
 
 export default function FAQ() {
  return (
@@ -10,6 +10,7 @@ export default function FAQ() {
    <PageHeader
     title="FAQs"
     content="Welcome to our FAQ page, where we've compiled answers to some of the most common questions our clients ask."
+    image={pageImages[6].source}
    />
    <div className="bg-white py-0 sm:py-0">
     <div className="mx-auto max-w-7xl px-6 lg:py-10 py-9 lg:px-8">
