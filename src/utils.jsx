@@ -1,107 +1,130 @@
 const site_url = import.meta.env.VITE_URL;
+const main = `${site_url}/images/original`
+const thumbnail = `${site_url}/images/thumbnail`
+
+const picsUrl = {
+  main: `${main}/pics`,
+  thumb: `${thumbnail}/pics`,
+};
+
+const logosUrl = {
+  main: `${main}/logos`,
+  thumb: `${thumbnail}/logos`,
+};
+
+const webUrl = {
+  main: `${main}/web`,
+  thumb: `${thumbnail}/web`,
+};
+
+const videosUrl = {
+  main: `${main}/videos`,
+  thumb: `${thumbnail}/videos`,
+};
+
 const standardWidth = 550
 const outlierWidth = 450
 
 export const companyImages1 = [
- { id: 35, source: `${site_url}/images/pics/35.jpg`, alt: "thirtyfive", description: "Chriscomik engineers fabricating a stage on SW-10", },
- { id: 36, source: `${site_url}/images/pics/36.jpg`, alt: "thirtysix", description: "Chriscomik engineers fixing a crane on SW-10", },
- { id: 41, source: `${site_url}/images/pics/41.jpg`, alt: "fortyone", description: "Our engineers fabricating and welding of pipeline on SW-10", },
- { id: 42, source: `${site_url}/images/pics/42.jpg`, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO", },
- { id: 43, source: `${site_url}/images/pics/43.jpg`, alt: "fortythree", description: "Our engineers fixing a diving LARS on NVKOMODO" }, 
- { id: 2, source: `${site_url}/images/pics/2.jpg`, alt: "two", description: "A diving equipment for SW-10" },
- { id: 24, source: `${site_url}/images/pics/24.jpg`, alt: "twentyfour", description: "Our engineers changing a hall plate", },
- { id: 29, source: `${site_url}/images/pics/29.jpg`, alt: "twentynine", description: "Our engineers welding on SW-10", },
- { id: 31, source: `${site_url}/images/pics/31.jpg`, alt: "thirtyone", description: "Our engineers welding on SW-10", },
+ { id: 35, src: `${picsUrl.main}/35.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "thirtyfive", description: "Chriscomik engineers fabricating a stage on SW-10", },
+ { id: 36, src: `${picsUrl.main}/36.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "thirtysix", description: "Chriscomik engineers fixing a crane on SW-10", },
+ { id: 41, src: `${picsUrl.main}/41.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "fortyone", description: "Our engineers fabricating and welding of pipeline on SW-10", },
+ { id: 42, src: `${picsUrl.main}/42.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "fortytwo", description: "Chriscomik engineers fixing a diving LARS on NVKOMODO", },
+ { id: 43, src: `${picsUrl.main}/43.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "fortythree", description: "Our engineers fixing a diving LARS on NVKOMODO" }, 
+ { id: 2, src: `${picsUrl.main}/2.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "two", description: "A diving equipment for SW-10" },
+ { id: 24, src: `${picsUrl.main}/24.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "twentyfour", description: "Our engineers changing a hall plate", },
+ { id: 29, src: `${picsUrl.main}/29.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "twentynine", description: "Our engineers welding on SW-10", },
+ { id: 31, src: `${picsUrl.main}/31.jpg`, thumbSrc: `${picsUrl.thumbnail}/35.jpg`, alt: "thirtyone", description: "Our engineers welding on SW-10", },
 ];
 
 export const companyImages2 = [
- { id: 3, source: `${site_url}/images/pics/3.jpg`, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",  width: standardWidth},
- { id: 4, source: `${site_url}/images/pics/4.jpg`, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
- { id: 5, source: `${site_url}/images/pics/5.jpg`, alt: "five", description: "Our engineers fabricating and welding at Tema Port", width: standardWidth},
- { id: 6, source: `${site_url}/images/pics/6.jpg`, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
- { id: 7, source: `${site_url}/images/pics/7.jpg`, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", width: standardWidth},
- { id: 8, source: `${site_url}/images/pics/8.jpg`, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
- { id: 9, source: `${site_url}/images/pics/9.jpg`, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", width: standardWidth},
- { id: 10, source: `${site_url}/images/pics/10.jpg`, alt: "ten", description: "Fabricating and welding", width: standardWidth},
- { id: 11, source: `${site_url}/images/pics/11.jpg`, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", width: standardWidth},
- { id: 12, source: `${site_url}/images/pics/12.jpg`, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
- { id: 14, source: `${site_url}/images/pics/14.jpg`, alt: "fourteen", description: "A fabricated blower machine at workshop", width: standardWidth},
- { id: 13, source: `${site_url}/images/pics/13.jpg`, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
- { id: 15, source: `${site_url}/images/pics/15.jpg`, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
- { id: 17, source: `${site_url}/images/pics/17.jpg`, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", width: standardWidth},
- { id: 22, source: `${site_url}/images/pics/22.jpg`, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", width: standardWidth},
- { id: 26, source: `${site_url}/images/pics/26.jpg`, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", width: standardWidth},
- { id: 27, source: `${site_url}/images/pics/27.jpg`, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", width: standardWidth},
- { id: 28, source: `${site_url}/images/pics/28.jpg`, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", width: standardWidth},
- { id: 30, source: `${site_url}/images/pics/30.jpg`, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", width: standardWidth},
- { id: 32, source: `${site_url}/images/pics/32.jpg`, alt: "thirtytwo", description: "Some pressure pipes", width: standardWidth},
- { id: 37, source: `${site_url}/images/pics/37.jpg`, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", width: standardWidth},
- { id: 40, source: `${site_url}/images/pics/40.jpg`, alt: "forty", description: "Welding and fabrication at Tema Port", width: standardWidth},
- { id: 39, source: `${site_url}/images/pics/39.jpg`, alt: "thirtynine", description: "Steel plate insertion", width: standardWidth},
- { id: 33, source: `${site_url}/images/pics/33.jpg`, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", width: standardWidth},
+ { id: 3, src: `${picsUrl.main}/3.jpg`,thumbSrc: `${picsUrl.thumbnail}/3.jpg`, alt: "three", description:  "Chriscomik engineers fabricating a blower foundation at workshop for SW-10",  width: standardWidth},
+ { id: 4, src: `${picsUrl.main}/4.jpg`,thumbSrc: `${picsUrl.thumbnail}/4.jpg`, alt: "four", description:  "Chriscomik engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
+ { id: 5, src: `${picsUrl.main}/5.jpg`,thumbSrc: `${picsUrl.thumbnail}/5.jpg`, alt: "five", description: "Our engineers fabricating and welding at Tema Port", width: standardWidth},
+ { id: 6, src: `${picsUrl.main}/6.jpg`,thumbSrc: `${picsUrl.thumbnail}/6.jpg`, alt: "six", description: "Our engineers fabricating and welding at PSC Tema shipyard", width: standardWidth},
+ { id: 7, src: `${picsUrl.main}/7.jpg`,thumbSrc: `${picsUrl.thumbnail}/7.jpg`, alt: "seven", description: "Working on propeller shaft at PSC Tema shipyard", width: standardWidth},
+ { id: 8, src: `${picsUrl.main}/8.jpg`,thumbSrc: `${picsUrl.thumbnail}/8.jpg`, alt: "eight", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
+ { id: 9, src: `${picsUrl.main}/9.jpg`,thumbSrc: `${picsUrl.thumbnail}/9.jpg`, alt: "nine", description: "Fabricating and inserting a new plate at Tema Port", width: standardWidth},
+ { id: 10, src: `${picsUrl.main}/10.jpg`,thumbSrc: `${picsUrl.thumbnail}/10.jpg`, alt: "ten", description: "Fabricating and welding", width: standardWidth},
+ { id: 11, src: `${picsUrl.main}/11.jpg`,thumbSrc: `${picsUrl.thumbnail}/11.jpg`, alt: "eleven", description: "A roller machine machine at Chriscomik workshop", width: standardWidth},
+ { id: 12, src: `${picsUrl.main}/12.jpg`,thumbSrc: `${picsUrl.thumbnail}/12.jpg`, alt: "twelve", description: "Heavy duty cutting machine at Chriscomik workshop", width: standardWidth},
+ { id: 14, src: `${picsUrl.main}/14.jpg`,thumbSrc: `${picsUrl.thumbnail}/14.jpg`, alt: "fourteen", description: "A fabricated blower machine at workshop", width: standardWidth},
+ { id: 13, src: `${picsUrl.main}/13.jpg`,thumbSrc: `${picsUrl.thumbnail}/13.jpg`, alt: "thirteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
+ { id: 15, src: `${picsUrl.main}/15.jpg`,thumbSrc: `${picsUrl.thumbnail}/15.jpg`, alt: "fifteen", description: "Welding and fabricating blower foundation at workshop", width: standardWidth},
+ { id: 17, src: `${picsUrl.main}/17.jpg`,thumbSrc: `${picsUrl.thumbnail}/17.jpg`, alt: "seventeen", description: "Chriscomik CEO and captain of MV Elena", width: standardWidth},
+ { id: 22, src: `${picsUrl.main}/22.jpg`,thumbSrc: `${picsUrl.thumbnail}/22.jpg`, alt: "twentytwo", description: "MV Elena after welding and fabrication at Tema Port", width: standardWidth},
+ { id: 26, src: `${picsUrl.main}/26.jpg`,thumbSrc: `${picsUrl.thumbnail}/26.jpg`, alt: "twentysix", description: "Working on the propeller shaft at PSC Tema Shipyard", width: standardWidth},
+ { id: 27, src: `${picsUrl.main}/27.jpg`,thumbSrc: `${picsUrl.thumbnail}/27.jpg`, alt: "twentyseven", description: "Sand blasting and painting at PSC Tema Shipyard", width: standardWidth},
+ { id: 28, src: `${picsUrl.main}/28.jpg`,thumbSrc: `${picsUrl.thumbnail}/28.jpg`, alt: "twentyeight", description: "Welding and fabrication on NVKOMODO", width: standardWidth},
+ { id: 30, src: `${picsUrl.main}/30.jpg`,thumbSrc: `${picsUrl.thumbnail}/30.jpg`, alt: "thirty", description: "Sand blasting at PSC Tema Shipyard", width: standardWidth},
+ { id: 32, src: `${picsUrl.main}/32.jpg`,thumbSrc: `${picsUrl.thumbnail}/32.jpg`, alt: "thirtytwo", description: "Some pressure pipes", width: standardWidth},
+ { id: 37, src: `${picsUrl.main}/37.jpg`,thumbSrc: `${picsUrl.thumbnail}/37.jpg`, alt: "thirtyseven", description: "Our engineers fabricating a staircase SW-10", width: standardWidth},
+ { id: 40, src: `${picsUrl.main}/40.jpg`,thumbSrc: `${picsUrl.thumbnail}/40.jpg`, alt: "forty", description: "Welding and fabrication at Tema Port", width: standardWidth},
+ { id: 39, src: `${picsUrl.main}/39.jpg`,thumbSrc: `${picsUrl.thumbnail}/39.jpg`, alt: "thirtynine", description: "Steel plate insertion", width: standardWidth},
+ { id: 33, src: `${picsUrl.main}/33.jpg`,thumbSrc: `${picsUrl.thumbnail}/33.jpg`, alt: "thirtythree", description: "Chriscomik engineers welding and fabrication at the workshop", width: standardWidth},
 ];
 
 export const companyImages3 = [
- { id: 7, source: `${site_url}/images/pics/IMG-20230404-WA0007.jpg`, alt: "image7", description: "", width: standardWidth },
- { id: 8, source: `${site_url}/images/pics/IMG-20230404-WA0008.jpg`, alt: "image8", description: "", width: standardWidth },
- { id: 10, source: `${site_url}/images/pics/IMG-20230404-WA0010.jpg`, alt: "image10", description: "", width: standardWidth },
- { id: 11, source: `${site_url}/images/pics/IMG-20230404-WA0011.jpg`, alt: "image11", description: "", width: standardWidth },
- { id: 12, source: `${site_url}/images/pics/IMG-20230404-WA0012.jpg`, alt: "image12", description: "", width: standardWidth },
- { id: 13, source: `${site_url}/images/pics/IMG-20230404-WA0013.jpg`, alt: "image13", description: "", width: standardWidth },
- { id: 14, source: `${site_url}/images/pics/IMG-20230404-WA0014.jpg`, alt: "image14", description: "", width: standardWidth },
- { id: 15, source: `${site_url}/images/pics/IMG-20230404-WA0015.jpg`, alt: "image15", description: "", width: standardWidth },
- { id: 16, source: `${site_url}/images/pics/IMG-20230404-WA0016.jpg`, alt: "image16", description: "", width: standardWidth },
- { id: 17, source: `${site_url}/images/pics/IMG-20230404-WA0017.jpg`, alt: "image17", description: "", width: standardWidth },
- { id: 18, source: `${site_url}/images/pics/IMG-20230404-WA0018.jpg`, alt: "image18", description: "", width: standardWidth },
- { id: 19, source: `${site_url}/images/pics/IMG-20230404-WA0019.jpg`, alt: "image19", description: "", width: standardWidth },
- { id: 20, source: `${site_url}/images/pics/IMG-20230404-WA0020.jpg`, alt: "image20", description: "", width: standardWidth },
- { id: 21, source: `${site_url}/images/pics/IMG-20230404-WA0021.jpg`, alt: "image21", description: "", width: standardWidth },
- { id: 22, source: `${site_url}/images/pics/IMG-20230404-WA0022.jpg`, alt: "image22", description: "", width: standardWidth },
- { id: 2, source: `${site_url}/images/pics/IMG-20230402-WA0002.jpg`, alt: "image2", description: "", width: standardWidth },
+ { id: 7, src: `${picsUrl.main}/IMG-20230404-WA0007.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0007.jpg`, alt: "image7", description: "", width: standardWidth },
+ { id: 8, src: `${picsUrl.main}/IMG-20230404-WA0008.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0008.jpg`, alt: "image8", description: "", width: standardWidth },
+ { id: 10, src: `${picsUrl.main}/IMG-20230404-WA0010.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0010.jpg`, alt: "image10", description: "", width: standardWidth },
+ { id: 11, src: `${picsUrl.main}/IMG-20230404-WA0011.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0011.jpg`, alt: "image11", description: "", width: standardWidth },
+ { id: 12, src: `${picsUrl.main}/IMG-20230404-WA0012.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0012.jpg`, alt: "image12", description: "", width: standardWidth },
+ { id: 13, src: `${picsUrl.main}/IMG-20230404-WA0013.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0013.jpg`, alt: "image13", description: "", width: standardWidth },
+ { id: 14, src: `${picsUrl.main}/IMG-20230404-WA0014.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0014.jpg`, alt: "image14", description: "", width: standardWidth },
+ { id: 15, src: `${picsUrl.main}/IMG-20230404-WA0015.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0015.jpg`, alt: "image15", description: "", width: standardWidth },
+ { id: 16, src: `${picsUrl.main}/IMG-20230404-WA0016.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0016.jpg`, alt: "image16", description: "", width: standardWidth },
+ { id: 17, src: `${picsUrl.main}/IMG-20230404-WA0017.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0017.jpg`, alt: "image17", description: "", width: standardWidth },
+ { id: 18, src: `${picsUrl.main}/IMG-20230404-WA0018.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0018.jpg`, alt: "image18", description: "", width: standardWidth },
+ { id: 19, src: `${picsUrl.main}/IMG-20230404-WA0019.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0019.jpg`, alt: "image19", description: "", width: standardWidth },
+ { id: 20, src: `${picsUrl.main}/IMG-20230404-WA0020.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0020.jpg`, alt: "image20", description: "", width: standardWidth },
+ { id: 21, src: `${picsUrl.main}/IMG-20230404-WA0021.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0021.jpg`, alt: "image21", description: "", width: standardWidth },
+ { id: 22, src: `${picsUrl.main}/IMG-20230404-WA0022.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0022.jpg`, alt: "image22", description: "", width: standardWidth },
+ { id: 2, src: `${picsUrl.main}/IMG-20230402-WA0002.jpg`,thumbSrc: `${picsUrl.thumbnail}/IMG-20230402-WA0002.jpg`, alt: "image2", description: "", width: standardWidth },
 ];
 
 export const outliers = [
-  { id: 5, source: `${site_url}/images/pics/IMG-20230404-WA0005.jpg`, alt: "image5", description: "", width: outlierWidth },
-  { id: 6, source: `${site_url}/images/pics/IMG-20230404-WA0006.jpg`, alt: "image6", description: "", width: outlierWidth },
-  { id: 9, source: `${site_url}/images/pics/IMG-20230404-WA0009.jpg`, alt: "image9", description: "", width: outlierWidth },
+  { id: 5, src: `${picsUrl.main}/IMG-20230404-WA0005.jpg`, thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0005.jpg`, alt: "image5", description: "", width: outlierWidth },
+  { id: 6, src: `${picsUrl.main}/IMG-20230404-WA0006.jpg`, thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0006.jpg`, alt: "image6", description: "", width: outlierWidth },
+  { id: 9, src: `${picsUrl.main}/IMG-20230404-WA0009.jpg`, thumbSrc: `${picsUrl.thumbnail}/IMG-20230404-WA0009.jpg`, alt: "image9", description: "", width: outlierWidth },
 ]
 
-export const logos = [
- { id: 1, source: `${site_url}/images/logos/ubi.png`, alt: "ubi" },
- { id: 2, source: `${site_url}/images/logos/bost.jpg`, alt: "bost" },
- { id: 3, source: `${site_url}/images/logos/supermaritime.jpg`, alt: "supermaritime" },
- { id: 4, source: `${site_url}/images/logos/temaport.jpeg`, alt: "temaport" },
- { id: 5, source: `${site_url}/images/logos/tor.png`, alt: "tor" },
- { id: 6, source: `${site_url}/images/logos/vra.webp`, alt: "vra" },
+export const logoImages = [
+ { id: 1, src: `${logosUrl.main}/ubi.png`, alt: "ubi" },
+ { id: 2, src: `${logosUrl.main}/bost.jpg`, alt: "bost" },
+ { id: 3, src: `${logosUrl.main}/supermaritime.jpg`, alt: "supermaritime" },
+ { id: 4, src: `${logosUrl.main}/temaport.jpeg`, alt: "temaport" },
+ { id: 5, src: `${logosUrl.main}/tor.png`, alt: "tor" },
+ { id: 6, src: `${logosUrl.main}/vra.webp`, alt: "vra" },
 ];
 
 export const webImages = [
- { id: 1, source: `${site_url}/images/web/pipeline ocean.jpg`, alt: "pipeline" },
- { id: 2, source: `${site_url}/images/web/man woman on deck.jpg`, alt: "deck" },
- { id: 3, source: `${site_url}/images/web/smiling man heavy machines.jpg`, alt: "heavy_machines" },
- { id: 4, source: `${site_url}/images/web/two men reflector port.jpg`, alt: "reflector_port" },
+ { id: 1, src: `${webUrl.main}/pipeline ocean.jpg`, alt: "pipeline" },
+ { id: 2, src: `${webUrl.main}/man woman on deck.jpg`, alt: "deck" },
+ { id: 3, src: `${webUrl.main}/smiling man heavy machines.jpg`, alt: "heavy_machines" },
+ { id: 4, src: `${webUrl.main}/two men reflector port.jpg`, alt: "reflector_port" },
 ];
 
 export const pageImages = [
- { id: 1, source: `${site_url}/images/web/about-us.jpeg`, alt: "about_us" },
- { id: 2, source: `${site_url}/images/web/about-us2.png`, alt: "about_us2" },
- { id: 3, source: `${site_url}/images/web/contact1.jpeg`, alt: "contact1" },
- { id: 4, source: `${site_url}/images/web/contact2.jpeg`, alt: "contact2" },
- { id: 5, source: `${site_url}/images/web/contact3.webp`, alt: "contact3" },
- { id: 6, source: `${site_url}/images/web/gallery.jpeg`, alt: "gallery" },
- { id: 7, source: `${site_url}/images/web/faq.jpg`, alt: "faq" },
+ { id: 1, src: `${webUrl.main}/about-us.jpeg`, alt: "about_us" },
+ { id: 2, src: `${webUrl.main}/about-us2.png`, alt: "about_us2" },
+ { id: 3, src: `${webUrl.main}/contact1.jpeg`, alt: "contact1" },
+ { id: 4, src: `${webUrl.main}/contact2.jpeg`, alt: "contact2" },
+ { id: 5, src: `${webUrl.main}/contact3.webp`, alt: "contact3" },
+ { id: 6, src: `${webUrl.main}/gallery.jpeg`, alt: "gallery" },
+ { id: 7, src: `${webUrl.main}/faq.jpg`, alt: "faq" },
 ];
 
 export const videos = [
- { id: 1, source: `${site_url}/videos/VID-20230222-WA0011.mp4`, alt: "video11", description: "" },
- { id: 2, source: `${site_url}/videos/VID-20230222-WA0012.mp4`, alt: "video12", description: "" },
- { id: 3, source: `${site_url}/videos/VID-20230222-WA0013.mp4`, alt: "video13", description: "" },
- { id: 4, source: `${site_url}/videos/VID-20230404-WA0023.mp4`, alt: "video23", description: "" },
- { id: 5, source: `${site_url}/videos/VID-20230404-WA0024.mp4`, alt: "video24", description: "" },
- { id: 6, source: `${site_url}/videos/VID-20230404-WA0025.mp4`, alt: "video25", description: "" },
+ { id: 1, src: `${videosUrl.main}/VID-20230222-WA0011.mp4`, alt: "video11", description: "" },
+ { id: 2, src: `${videosUrl.main}/VID-20230222-WA0012.mp4`, alt: "video12", description: "" },
+ { id: 3, src: `${videosUrl.main}/VID-20230222-WA0013.mp4`, alt: "video13", description: "" },
+ { id: 4, src: `${videosUrl.main}/VID-20230404-WA0023.mp4`, alt: "video23", description: "" },
+ { id: 5, src: `${videosUrl.main}/VID-20230404-WA0024.mp4`, alt: "video24", description: "" },
+ { id: 6, src: `${videosUrl.main}/VID-20230404-WA0025.mp4`, alt: "video25", description: "" },
 ];
 
-export const companyLogo = `${site_url}/images/logos/chriscomik_1.png`
+export const companyLogo = `${logosUrl.main}/chriscomik_1.png`
 export const activeLink = "text-sky-400";
 export const navigation = [
  { id: 1, name: "About", path: "/about" },
