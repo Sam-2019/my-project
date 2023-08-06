@@ -1,5 +1,5 @@
 import React from "react";
-import { logos } from "../utils";
+import { logoImages } from "../utils";
 
 export default function LogoCloud() {
  return (
@@ -20,7 +20,7 @@ export default function LogoCloud() {
       </div>
      </div>
      <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-      {logos.map((logo) => (
+      {logoImages.map((logo) => (
        <div
         key={logo.id}
         className="col-span-1 flex justify-center bg-gray-50 py-8 px-8 grayscale hover:grayscale-0"
