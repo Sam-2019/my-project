@@ -21,11 +21,9 @@ export default function Gallery() {
 
    <div className="py-0 sm:py-0">
     <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-5 sm:pb-5">
-     <SimpleGallery galleryID="my-test-gallery" images={photo_list} />
      <SimpleGallery galleryID="companyImages1" images={companyImages1} />
      <SimpleGallery galleryID="companyImages2" images={companyImages3} />
      <SimpleGallery galleryID="companyImages3" images={companyImages2} />
-
      <SimpleGallery galleryID="outliers" images={outliers} />
      <ul
       role="list"
@@ -46,30 +44,3 @@ export default function Gallery() {
   </div>
  );
 }
-
-const photo_list = [
- {
-  largeURL:
-   "https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg",
-  thumbnailURL:
-   "https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg",
-  width: 1875,
-  height: 2500,
- },
- {
-  largeURL:
-   "https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg",
-  thumbnailURL:
-   "https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg",
-  width: 1669,
-  height: 2500,
- },
- {
-  largeURL:
-   "https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg",
-  thumbnailURL:
-   "https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg",
-  width: 2500,
-  height: 1666,
- },
-];
