@@ -12,7 +12,7 @@ export default function HomeItem() {
      <div className="absolute inset-0">
       <img
        className="h-full w-full object-cover rounded-md"
-       src={activeImage.source}
+       src={activeImage.src}
        alt={activeImage.alt}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />

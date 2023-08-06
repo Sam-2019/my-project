@@ -56,7 +56,7 @@ export default function MyModal({ show, setIsOpen, data, setData }) {
             </div>
            </div>
            <div class="h-min rounded-2xl">
-            <img src={data.source} alt={data.alt} width={data.width ?? null} />
+            <img src={data.src} alt={data.alt} width={data.width ?? null} />
            </div>
           </div>
          </div>

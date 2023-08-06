@@ -25,7 +25,7 @@ export default function LogoCloud() {
         key={logo.id}
         className="col-span-1 flex justify-center bg-gray-50 py-8 px-8 grayscale hover:grayscale-0"
        >
-        <img className="max-h-12" src={logo.source} alt={logo.alt} />
+        <img className="max-h-12" src={logo.src} alt={logo.alt} />
        </div>
       ))}
      </div>

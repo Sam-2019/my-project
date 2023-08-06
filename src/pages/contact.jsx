@@ -67,7 +67,7 @@ export default function Contact() {
     <PageHeader
      title="CONTACT"
      content="We look forward to hearing from you and helping you meet your needs"
-     image={pageImages[4].source}
+     image={pageImages[4].src}
     />
     <div className="bg-warm-gray-50">
      <div className="py-20 sm:py-20">

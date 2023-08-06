@@ -10,7 +10,7 @@ export default function FAQ() {
    <PageHeader
     title="FAQs"
     content="Welcome to our FAQ page, where we've compiled answers to some of the most common questions our clients ask."
-    image={pageImages[6].source}
+    image={pageImages[6].src}
    />
    <div className="bg-white py-0 sm:py-0">
     <div className="mx-auto max-w-7xl px-6 lg:py-10 py-9 lg:px-8">

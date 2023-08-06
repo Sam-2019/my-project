@@ -8,7 +8,7 @@ export default function About() {
    <PageHeader
     title="ABOUT US"
     content="We provide multi-disciplinary solutions to the industries we serve."
-    image={pageImages[0].source}
+    image={pageImages[0].src}
    />
 
    <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">

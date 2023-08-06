@@ -16,7 +16,7 @@ export default function Gallery() {
    <PageHeader
     title="GALLERY"
     content="Welcome to our gallery page, where you can view some of our most recent projects."
-    image={pageImages[5].source}
+    image={pageImages[5].src}
    />
 
    <div className="py-0 sm:py-0">
@@ -35,7 +35,7 @@ export default function Gallery() {
        <li key={file.id} className="relative">
         <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
          <video width="320" height="240" controls>
-          <source src={file.source} type="video/mp4" />
+          <source src={file.src} type="video/mp4" />
          </video>
         </div>
        </li>
