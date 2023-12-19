@@ -53,13 +53,13 @@ export default function About() {
 
        <span className="block text-base leading-7">
         Our family of subsidiaries includes{" "}
-        <span className="text-3xl font-bold tracking-tight text-gray-900 text-base leading-7">
+        <span className="font-bold tracking-tight text-gray-900 text-base leading-7">
          Sasmarin Company Limited
         </span>
         , which specializes in aluminum and argon welding, as well as the supply
         of plates and stainless materials, and electrical engineering services.
         We also have{" "}
-        <span className="text-3xl font-bold tracking-tight text-gray-900 text-base leading-7">
+        <span className="font-bold tracking-tight text-gray-900 text-base leading-7">
          Davmas Company Limited
         </span>
         , which provides tank cleaning, sandblasting, and diving support
