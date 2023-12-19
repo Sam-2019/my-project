@@ -16,7 +16,7 @@ export default function Navigation() {
       <div className="flex flex-1 items-center">
        <div className="flex w-full items-center justify-between lg:w-auto">
         <Link to="/">
-         <span className="sr-only">Your Company</span>
+         <span className="sr-only">Chriscomik Engineering</span>
          <CompanyLogo />
         </Link>
         <div className="-mr-2 flex items-center lg:hidden">
