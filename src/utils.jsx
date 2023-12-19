@@ -128,7 +128,7 @@ export const pageImages = [
  { id: 4, src: `${webUrl.main}/contact2.jpeg`, alt: "contact2" },
  { id: 5, src: `${webUrl.main}/contact3.webp`, alt: "contact3" },
  { id: 6, src: `${webUrl.main}/gallery.jpeg`, alt: "gallery" },
- { id: 7, src: `${webUrl.main}/faq.jpg`, alt: "faq" },
+ { id: 7, src: `${webUrl.main}/faq.webp`, alt: "faq" },
 ];
 
 export const videos = [
