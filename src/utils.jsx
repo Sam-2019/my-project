@@ -24,8 +24,8 @@ const videosUrl = {
 
 const dimensions = {
   companyImages1: {
-    width: 1024,
-    height: 576,
+    width: 1000,
+    height: 600,
   },
   companyImages2: {
     width: 960,
@@ -601,6 +601,13 @@ export const pageImages = [
   { id: 6, src: `${webUrl.main}/gallery.jpeg`, alt: "gallery" },
   { id: 7, src: `${webUrl.main}/faq.webp`, alt: "faq" },
 ];
+
+export const all_images = [
+  ...companyImages1,
+  ...companyImages2,
+  ...companyImages3,
+  ...outliers,
+]
 
 export const videos = [
   {

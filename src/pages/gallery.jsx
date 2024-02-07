@@ -1,46 +1,52 @@
 import React, { useState } from "react";
 import PageHeader from "../components/page_header";
-import SimpleGallery from "../components/photo_swipe";
+
+import PhotoAlbum from "react-photo-album";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
 import {
- companyImages1,
- companyImages2,
- companyImages3,
- pageImages,
- outliers,
- videos,
+  pageImages,
+  all_images,
 } from "../utils";
 
 export default function Gallery() {
- return (
-  <div>
-   <PageHeader
-    title="GALLERY"
-    content="Welcome to our gallery page, where you can view some of our most recent projects."
-    image={pageImages[5].src}
-   />
+  const [index, setIndex] = useState(-1);
+  return (
+    <div>
+      <PageHeader
+        title="GALLERY"
+        content="Welcome to our gallery page, where you can view some of our most recent projects."
+        image={pageImages[5].src}
+      />
 
-   <div className="py-0 sm:py-0">
-    <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-5 sm:pb-5">
-     <SimpleGallery galleryID="companyImages1" images={companyImages1} />
-     <SimpleGallery galleryID="companyImages2" images={companyImages3} />
-     <SimpleGallery galleryID="companyImages3" images={companyImages2} />
-     <SimpleGallery galleryID="outliers" images={outliers} />
-     <ul
-      role="list"
-      className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 mt-5"
-     >
-      {videos.map((file) => (
-       <li key={file.id} className="relative">
-        <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-         <video width="320" height="240" controls>
-          <source src={file.src} type="video/mp4" />
-         </video>
+      <div className="py-0 sm:py-0">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-5 sm:pb-5">
+          <PhotoAlbum
+            layout="rows"
+            photos={all_images}
+            padding={7}
+            spacing={2}
+            width={100}
+            targetRowHeight={225}
+            onClick={({ index }) => setIndex(index)}
+          />
+
+          <Lightbox
+            slides={all_images}
+            open={index >= 0}
+            index={index}
+            close={() => setIndex(-1)}
+            // enable optional lightbox plugins
+            plugins={[Fullscreen, Slideshow, Zoom]}
+          />
         </div>
-       </li>
-      ))}
-     </ul>
+      </div>
     </div>
-   </div>
-  </div>
- );
+  );
 }

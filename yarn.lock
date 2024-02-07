@@ -958,9 +958,11 @@ __metadata:
     react-fast-marquee: ^1.6.3
     react-hook-form: ^7.43.9
     react-iframe: ^1.8.5
+    react-photo-album: ^2.3.1
     react-router-dom: ^6.8.1
     tailwindcss: ^3.2.6
     vite: ^4.1.0
+    yet-another-react-lightbox: ^3.17.0
   languageName: unknown
   linkType: soft
 
@@ -2269,6 +2271,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-photo-album@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "react-photo-album@npm:2.3.1"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 33057c316bb0e3a0d522801155ca962b8ea5ec8fa5e9d1d6eab019e39a37b4f8d520d3f0a889f2bdd44d2ecd12fb1d4ddd5f3170041a9947793ddf5c699b72af
+  languageName: node
+  linkType: hard
+
 "react-refresh@npm:^0.14.0":
   version: 0.14.0
   resolution: "react-refresh@npm:0.14.0"
@@ -2818,5 +2829,15 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
+  languageName: node
+  linkType: hard
+
+"yet-another-react-lightbox@npm:^3.17.0":
+  version: 3.17.0
+  resolution: "yet-another-react-lightbox@npm:3.17.0"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: f1f0f73c714ce3a035fb7d45f4a516c73ceeb5de86052b0ec677ed30a1e8cbdd93f5cf7feee2be0e4882e1cefa7f3f2c40ae1ddd0aa6afa670f2bb1d557c61c2
   languageName: node
   linkType: hard

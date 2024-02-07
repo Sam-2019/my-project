@@ -11,6 +11,7 @@ export default function Map({url}) {
       scrolling="no"
       marginheight="0"
       marginwidth="0"
+      className="rounded-xl"
     />
   );
 }
