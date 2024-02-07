@@ -88,6 +88,24 @@ export const companyImages1 = [
     height: dimensions.companyImages1.height,
   },
   {
+    id: 431,
+    src: `${picsUrl.main}/43-1.jpg`,
+    thumbSrc: `${picsUrl.thumbnail}/35.jpg`,
+    alt: "fortythreeone",
+    description: "",
+    width: dimensions.companyImages1.width,
+    height: dimensions.companyImages1.height,
+  },
+  {
+    id: 432,
+    src: `${picsUrl.main}/43-2.jpg`,
+    thumbSrc: `${picsUrl.thumbnail}/35.jpg`,
+    alt: "fortythreetwo",
+    description: "",
+    width: dimensions.companyImages1.width,
+    height: dimensions.companyImages1.height,
+  },
+  {
     id: 2,
     src: `${picsUrl.main}/2.jpg`,
     thumbSrc: `${picsUrl.thumbnail}/35.jpg`,
@@ -256,7 +274,7 @@ export const companyImages2 = [
   },
   {
     id: 152,
-    src: `${picsUrl.main}/15-5.jpg`,
+    src: `${picsUrl.main}/15-2.jpg`,
     thumbSrc: `${picsUrl.thumbnail}/15-2.jpg`,
     alt: "fifteen",
     description: "",
