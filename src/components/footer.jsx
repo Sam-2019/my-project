@@ -7,11 +7,11 @@ export default function Footer() {
   <footer className="bg-white">
    <div className="mx-auto max-w-7xl overflow-hidden py-5 px-6 sm:py-5 lg:px-8">
     <nav
-     className="-mb-6 text-center sm:flex sm:justify-center sm:space-x-12"
+     className="pt-5 text-center flex flex-row"
      aria-label="Footer"
     >
      {navigation.map((item) => (
-      <div key={item.name} className="pb-6">
+      <div key={item.name} className="basis-2/4">
        <Link
         to={item.path}
         className="text-sm leading-6 text-gray-600 hover:text-gray-900"
@@ -21,7 +21,7 @@ export default function Footer() {
       </div>
      ))}
     </nav>
-    {/* <div className="mt-10 flex justify-center space-x-10">
+     <div className="mt-10 flex justify-center space-x-10">
      {social.map((item) => (
       <Link
        key={item.name}
@@ -32,8 +32,9 @@ export default function Footer() {
        <item.icon className="h-6 w-6" aria-hidden="true" />
       </Link>
      ))}
-    </div> */}
-    <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+    </div> 
+
+    <p className="mt-10 text-center text-xs leading-5 text-gray-500 my-6">
      &copy; {new Date().getFullYear()} Chriscomik Company, Limited. All rights
      reserved.
     </p>

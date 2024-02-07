@@ -897,9 +897,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001426, caniuse-lite@npm:^1.0.30001449":
-  version: 1.0.30001519
-  resolution: "caniuse-lite@npm:1.0.30001519"
-  checksum: 66085133ede05d947e30b62fed2cbae18e5767afda8b0de38840883e1cfe5846bf1568ddbafd31647544e59112355abedaf9c867ac34541bfc20d69e7a19d94c
+  version: 1.0.30001581
+  resolution: "caniuse-lite@npm:1.0.30001581"
+  checksum: ca4e2cd9d0acf5e3c71fa2e7cd65561e4532d32b640145f634c333792074bb63de1239b35abfb6b6d372f97caf26f8d97faac7ba51ef190717ad2d3ae9c0d7a2
   languageName: node
   linkType: hard
 
@@ -955,7 +955,9 @@ __metadata:
     postcss: ^8.4.21
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-fast-marquee: ^1.6.3
     react-hook-form: ^7.43.9
+    react-iframe: ^1.8.5
     react-router-dom: ^6.8.1
     tailwindcss: ^3.2.6
     vite: ^4.1.0
@@ -2022,6 +2024,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"object-assign@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "object-assign@npm:4.1.1"
+  checksum: fcc6e4ea8c7fe48abfbb552578b1c53e0d194086e2e6bbbf59e0a536381a292f39943c6e9628af05b5528aa5e3318bb30d6b2e53cadaf5b8fe9e12c4b69af23f
+  languageName: node
+  linkType: hard
+
 "object-hash@npm:^3.0.0":
   version: 3.0.0
   resolution: "object-hash@npm:3.0.0"
@@ -2230,12 +2239,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-fast-marquee@npm:^1.6.3":
+  version: 1.6.3
+  resolution: "react-fast-marquee@npm:1.6.3"
+  peerDependencies:
+    react: ">= 16.8.0 || 18.0.0"
+    react-dom: ">= 16.8.0 || 18.0.0"
+  checksum: 7dc54eb0ab073796bb33fb62e89db3db3f487b68142cebe7be656b54696db67b6b684b4339ed07cfc2d22b62a7b79cf4406148e5f21dbf580897898bfe138801
+  languageName: node
+  linkType: hard
+
 "react-hook-form@npm:^7.43.9":
   version: 7.43.9
   resolution: "react-hook-form@npm:7.43.9"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18
   checksum: 65b94de625f2b7921c4e856bf0abbe142bfe06c052217bd1bcc3a842e2cc37fa3a3e03758119dc038bbcf5edb49e02c29206528b80b201f9a4d601471ef78153
+  languageName: node
+  linkType: hard
+
+"react-iframe@npm:^1.8.5":
+  version: 1.8.5
+  resolution: "react-iframe@npm:1.8.5"
+  dependencies:
+    object-assign: ^4.1.1
+  peerDependencies:
+    react: ">=16.x.x"
+  checksum: b2bb08039329035d44d6d85613337e200b7fe6d854dd45a54c34fc53ff4118874f23e17c7dbbb4825cd3d4b874ae4436edcabc819308e1aea4fdc3730ea50df0
   languageName: node
   linkType: hard
 

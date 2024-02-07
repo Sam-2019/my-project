@@ -10,7 +10,7 @@ export default function LogoCloud() {
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
        Engaged by some of the best Oil & Gas, and Engineering companies in Ghana
       </h2>
-      <p className="mt-3 max-w-3xl text-lg text-gray-500">
+      <p className="mt-3 max-w-by 3xl text-lg text-gray-500">
        We have built a solid reputation in the oil and gas industry and have
        grown rapidly into a global service company.
       </p>
