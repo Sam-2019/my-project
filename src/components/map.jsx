@@ -5,7 +5,7 @@ export default function Map({url}) {
   return (
     <Iframe
       url={url}
-      width="490px"
+      width="100%"
       height="320px"
       frameborder="0"
       scrolling="no"

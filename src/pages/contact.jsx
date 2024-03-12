@@ -476,10 +476,10 @@ export default function Contact() {
               We would be delighted to welcome you to our office, please feel
               free to drop by at any time.
             </p>
-            <div className="mt-6 md:flex md:justify-start">
+            <div className="sm:mt-10 mt-5 md:flex md:justify-start grid gap-y-1 gap-x-4 sm:grid-cols-2">
               {offices.map((office) => (
                 <div key={office.id} className="basis-1/2 mt-8 md:mt-0">
-                  <h3 className="text-3xl font-light text-warm-gray-900">
+                  <h3 className="text-2xl font-light text-warm-gray-900">
                     {office.city}{" "}
                     <span className="text-lg font-thin">
                       {office.address[1]}
